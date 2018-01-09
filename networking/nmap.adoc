@@ -1,6 +1,8 @@
 = Nmap
 
-* No ping scan `nmap -Pn 10.8.247.254`
+== Scan commands
+
+* No ping scan `nmap -Pn 10.8.247.254` (in older version was `-P0`)
 * IP range scan `nmap 10.8.247.250-254`
 * Subnet scan `nmap 10.8.247.1/32`
 * Port range scan `nmap -p 1-100 10.8.247.254`
@@ -8,8 +10,20 @@
 * Fast scan (`-F`) scans only 100 most common ports (default scan scans 1000 ports)
 * TCP connect scan `nmap -sT 10.8.247.254`
 * TCP SYN scan (faster than full TCP connection `-sT`) `nmap -sS 10.8.247.254`
+* UDP scan `nmap -sU 10.8.247.254`
+* UDP scan with reason if the port filtered/closed etc. `nmap -sU --reason 10.8.247.254`
 * Detecting OS `nmap -A 10.8.247.254`
+* Detecting version of the protocol on given port `nmap -sV 10.8.247.254`
 * Scan intensity `nmap -sV --version-intensity 5 10.8.247.254`
+* Decoy scan `nmap -sS 10.8.247.254 -D 10.0.0.1,10.0.0.2` - use own IP address and `10.0.0.1` and `10.0.0.2` as originators of the scan
+
+== I/O
+
+* List of IP addresses from a file `nmap -iL addrs.txt`
+* Save output into a file `nmap 10.8.247.250-254 -oN scan.log`
+
+== Scripts
+
 * Show help for given script `--script-help=<Lua scripts>`
 * Location of the scripts `/usr/share/nmap/scripts/`
 
