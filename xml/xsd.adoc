@@ -1,0 +1,7 @@
+= XSD
+
+== xmllint
+
+=== Validation
+
+* `xmllint -schema test.xsd test.xml --noout` (with `--noout` xsd and xml content won't be written to stdout)
