@@ -1,0 +1,9 @@
+= Leiningen
+
+== General
+
+* Leiningen Clojure REPL: `lein repl`
+
+== Project
+
+* Create new project based on `app` template: `lein new app projectName`
