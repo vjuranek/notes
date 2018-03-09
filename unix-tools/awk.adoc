@@ -1,0 +1,12 @@
+= AWK
+
+== Options
+* `-F` - file separator
+
+== Variables
+* `FS` - file separator
+* `OFS` - output file separator
+* `NF` - number of fields in a record
+* `NR` -  number of records
+* `FNR` - number of records relative to current input
+* `RS` - record separator (by default new line)
