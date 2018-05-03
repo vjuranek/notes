@@ -1,0 +1,5 @@
+= Docker
+
+== Useful commands
+
+* `docker rm `docker ps -a -q`` - remove all containers
