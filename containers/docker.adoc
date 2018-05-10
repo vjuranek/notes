@@ -3,3 +3,4 @@
 == Useful commands
 
 * `docker rm `docker ps -a -q`` - remove all containers
+* `docker inspect -f {{.NetworkSettings.Networks.docker_default.IPAddress}} $CONTAINER_ID` - shows IP address of the container
