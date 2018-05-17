@@ -1,0 +1,5 @@
+= OpenStack Glance
+
+== Creating images
+
+* `glance image-create --name debian-9.4.5 --disk-format qcow2 --file debian-9.4.5-openstack-amd64.qcow2 --container-format bare` 
