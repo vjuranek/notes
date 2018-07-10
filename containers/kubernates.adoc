@@ -1,7 +1,19 @@
 = Kubernates
 
+== Basic commands
+
+* `kubectl get deployments` list deployments
+* `kubectl get pods`
+* `kubectl get services`
+
+== Config
+
+* `kubectl config view`
+
 == Debug
 
+* `kubectl logs $POD_NAME`
+* `kubectl get events`
 * `kubectl cluster-info`
 * `kubectl cluster-info dump`
 

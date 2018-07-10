@@ -14,3 +14,8 @@
 === Certificates
 
 * `docker --tlscacert=/home/vjuranek/.minikube/ca.pem --tlscert=/home/vjuranek/.minikube/cert.pem --tlskey=/home/vjuranek/.minikube/key.pem $CMD` use Minikube certificates
+
+== Addons
+
+* `minikube addons list`
+* `minikube addons open heapster` starts Influx and Grafana
