@@ -1,0 +1,16 @@
+= Minikube
+
+== Admin
+
+* `minikube dashboard` starts dashboard in browser
+
+== Local Docker env
+
+* `eval $(minikube docker-env)` sets env to use Minikube docker host and registry
+* `eval $(minikube docker-env -u)` unsets env setup in previous step
+
+== Docker
+
+=== Certificates
+
+* `docker --tlscacert=/home/vjuranek/.minikube/ca.pem --tlscert=/home/vjuranek/.minikube/cert.pem --tlskey=/home/vjuranek/.minikube/key.pem $CMD` use Minikube certificates
