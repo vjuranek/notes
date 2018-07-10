@@ -1,0 +1,7 @@
+= Kubernates
+
+== Debug
+
+* `kubectl cluster-info`
+* `kubectl cluster-info dump`
+
