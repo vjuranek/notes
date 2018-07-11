@@ -5,6 +5,11 @@
 * `kubectl get deployments` list deployments
 * `kubectl get pods`
 * `kubectl get services`
+* `kubectl describe pods`
+
+== Deployments
+
+* `kubectl expose deployment $DEPLOY_NAME --type=LoadBalancer`
 
 == Config
 

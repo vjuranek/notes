@@ -3,6 +3,7 @@
 == Admin
 
 * `minikube dashboard` starts dashboard in browser
+* `minikube ip` IP address of the VM
 
 == Local Docker env
 
