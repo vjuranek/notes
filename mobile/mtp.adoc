@@ -1,0 +1,16 @@
+= MTP
+
+== udev rule
+
+* connect mobile and run `dmesg | tail`
+* create `/etc/udev/rules.d/11-phone.rules` with (based on `dmesg` output)
+[source, shell]
+----
+SUBSYSTEM=="usb", ATTR{idVendor}=="17ef", ATTR{idProduct}="2008", SYMLINK="phone"
+----
+* `udevadm control --reload-rules`
+
+== Mounting
+
+* `simple-mtpfs /dev/phone /mnt/phone/` (under root)
+
