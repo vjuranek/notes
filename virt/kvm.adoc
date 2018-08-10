@@ -3,9 +3,11 @@
 == Nested virtualization
 
 On host node run
+
 * `modprobe -r kvm_intel` removes kvm module
 * `modprobe kvm_intel nested=1` load kvm module with nested virtualization enabled
 * `cat /sys/module/kvm_intel/parameters/nested` checks that nested virtualization is really enabled (should be `Y`)
+
 This is only until reboot config. To make it permanent, edit `/etc/modprobe.d/kvm.conf` and insert `options kvm_intel nested=1`.
 
 The edit virtual machine:

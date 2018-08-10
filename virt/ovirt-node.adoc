@@ -5,4 +5,5 @@
 * `virt-host-validate`
 
 Enable nested vistualization on host node, see link:kvm.adoc[KVM howto] for more details.
+
 Eventually enable `fuse` kerne module: `modprobe fuse`
