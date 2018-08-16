@@ -1,0 +1,7 @@
+= Fedora
+
+== Display manager
+
+* install display manager (e.g. `sddm` or `kdm`)
+* `dnf install system-switch-displaymanager system-switch-displaymanager-gnome`
+* run `system-switch-displaymanager` and select display manager
