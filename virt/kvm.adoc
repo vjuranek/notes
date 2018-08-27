@@ -11,6 +11,7 @@ On host node run
 This is only until reboot config. To make it permanent, edit `/etc/modprobe.d/kvm.conf` and insert `options kvm_intel nested=1`.
 
 The edit virtual machine:
+
 * `virsh edit ovirt-node`
 and change `cpu mode` from `custom` to `host-passthrough`, e.g.
 [source, xml]
