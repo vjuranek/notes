@@ -2,8 +2,8 @@
 
 == Installation
 
-* `dnf install postgresql-server postgresql-contrib
-`* `postgresql-setup --initdb --unit postgresql`
+* `dnf install postgresql-server postgresql-contrib`
+* `postgresql-setup --initdb --unit postgresql`
 * edit `/var/lib/pgsql/data/pg_hba.conf` and set connections from localhost as trusted:
 [source, bash]
 ----
