@@ -1,0 +1,5 @@
+= oVirt dev
+
+== oVirt engine
+
+* `$HOME/ovirt-engine/share/ovirt-engine/services/ovirt-engine/ovirt-engine.py start` start installed dev instance
