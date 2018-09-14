@@ -1,0 +1,6 @@
+= grep
+
+* `-H` prints also file name
+* `-e pattern1 -e pattern2` searchs for `pattern1` or `pattern2`
+
+* usage with `find`: `find . -name config.xml -exec grep -H -e pattern1 -e pattern2 {} \;`
