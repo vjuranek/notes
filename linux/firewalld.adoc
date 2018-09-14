@@ -1,0 +1,3 @@
+= firewalld
+
+* `firewall-cmd --add-service nfs; firewall-cmd --reload` - adds rule for NFS
