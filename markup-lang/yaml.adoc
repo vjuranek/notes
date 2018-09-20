@@ -2,6 +2,9 @@
 
 == Multiple lines
 
-* `>, |` - keep the line feed, remove the trailing blank lines
-* `>-, |-` - remove the line feed, remove the trailing blank lines
-* `>+, |+` - keep the line feed, keep trailing blank lines
+* `>` - replace newlines with spaces
+* `|` - keep new lines
+
+* `>, |` - single newline at end
+* `>-, |-` - no newline at end
+* `>+, |+` - all newlines from end
