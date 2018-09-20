@@ -7,4 +7,4 @@
 
 * `>, |` - single newline at end
 * `>-, |-` - no newline at end
-* `>\+, |\+` - all newlines from end
+* `>\+, |+` - all newlines from end
