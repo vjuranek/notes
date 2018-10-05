@@ -1,0 +1,5 @@
+= Ansible
+
+* `ansible-doc -l` - list available plugins
+
+* `ansible-galaxy init my_role` - prepare dir sturcure for a new role
