@@ -1,0 +1,5 @@
+= Yum
+
+* `yum install $packge_name-$version_info` - installs or update specified package version
+* `yum downgrade $package_name-$version_info` - downgrades to specified version
+* `yum list --showduplicates $package_name` - shows all available package vesrions
