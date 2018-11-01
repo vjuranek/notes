@@ -1,3 +1,3 @@
 = Java tools
 
-* ` jmap -dump:file=<file> <PID>` - heap dump
+* `jmap -dump:file=<file> <PID>` - heap dump
