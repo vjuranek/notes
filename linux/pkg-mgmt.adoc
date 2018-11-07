@@ -1,3 +1,7 @@
+= RPM
+
+* `rpm -q --scripts <package>` - list pre-install and post-install scripts run by installed packed
+
 = Yum
 
 * `yum install $packge_name-$version_info` - installs or update specified package version
