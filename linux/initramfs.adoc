@@ -1,0 +1,3 @@
+= initramfs
+
+* `lsinitrd initramfs-1.img -f /etc/multipath.conf` - prints content of file
