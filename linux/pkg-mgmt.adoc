@@ -2,8 +2,8 @@
 
 * `rpm -q --scripts <package>` - list pre-install and post-install scripts run by installed packed
 
-= Yum
+= Yum/dnf
 
 * `yum install $packge_name-$version_info` - installs or update specified package version
 * `yum downgrade $package_name-$version_info` - downgrades to specified version
-* `yum list --showduplicates $package_name` - shows all available package vesrions
+* `dnf list available $package_name` - shows all available package vesrions (`yum list --showduplicates $package_name` should work as well)
