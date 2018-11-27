@@ -5,3 +5,6 @@
 * install display manager (e.g. `sddm` or `kdm`)
 * `dnf install system-switch-displaymanager system-switch-displaymanager-gnome`
 * run `system-switch-displaymanager` and select display manager
+
+== Fresh install
+* `sudo -i` and once under the root `passwd` - to get root access and set up root password if the root passwd is not asked during installation (gnome)
