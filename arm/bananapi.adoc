@@ -9,6 +9,7 @@
 * insert SD card into laptop (assuming it's found in `/dev/mmcblk0`)
 * `mkfs.fat /dev/mmcblk0`
 * `dd if=/tmp/Armbian.img of=/dev/mmcblk0`
+* default credentials: `root/1234`
 
 === Fedora
 
