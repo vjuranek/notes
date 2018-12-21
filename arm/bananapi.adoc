@@ -5,6 +5,7 @@
 === Armbian
 
 * download https://www.armbian.com/bananapi-m64[Armbian image]
+* `7z x Armbian_5.65_Bananapim64_Debian_stretch_next_4.14.78.7z`
 * insert SD card into laptop (assuming it's found in `/dev/mmcblk0`)
 * `mkfs.fat /dev/mmcblk0`
 * `dd if=/tmp/Armbian.img of=/dev/mmcblk0`
