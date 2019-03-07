@@ -1,0 +1,6 @@
+= Git howto
+
+== Git log
+
+* `git log --grep=bug_url` - selects only commit which message contains `bug_url` (in general any pattern)
+* `git log --grep=$pattern --pretty=format:"%h"` - select commit containing <patter> and show only short commit hashes (`%H` for full commit hash)
