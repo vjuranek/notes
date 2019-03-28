@@ -8,3 +8,8 @@
 * `yum downgrade $package_name-$version_info` - downgrades to specified version
 * `dnf list available $package_name` - shows all available package vesrions (`yum list --showduplicates $package_name` should work as well)
 * `yum-builddep $pkg` - install build dependencies for package or spec file
+
+== Transactions
+
+* `dnf history list` - list transactions
+* `dnf history undo $id` - reverts transaction `$id`	
