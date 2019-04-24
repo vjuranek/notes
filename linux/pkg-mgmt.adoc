@@ -9,6 +9,11 @@
 * `dnf list available $package_name` - shows all available package vesrions (`yum list --showduplicates $package_name` should work as well)
 * `yum-builddep $pkg` - install build dependencies for package or spec file
 
+== Yum utils
+
+* `yum install yum-utils`
+* `repoquery -i $pkg` - which repo contains package `pkg`
+
 == Transactions
 
 * `dnf history list` - list transactions
