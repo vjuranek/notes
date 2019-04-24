@@ -12,7 +12,7 @@
 == Yum utils
 
 * `yum install yum-utils`
-* `repoquery -i $pkg` - which repo contains package `pkg`
+* `dnf repoquery -i $pkg` - which repo contains package `pkg` (on CentOS/RHEL with `yum`: `repoquery -i $pkg`)
 
 == Transactions
 
