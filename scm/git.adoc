@@ -5,3 +5,9 @@
 * `git log a..b` - git log in range from commit hash `a` to `b`
 * `git log --grep=bug_url` - selects only commit which message contains `bug_url` (in general any pattern)
 * `git log --grep=$pattern --pretty=format:"%h"` - select commit containing <patter> and show only short commit hashes (`%H` for full commit hash)
+
+== Git email
+
+* `dnf install git-email`
+* `git format-patch -N --to=to@email --cc=cc1@email --cc=cc2@email` - formats last N patches and sets TO and CC emails
+* `git send-email --smtp-server=smtp.server.addr *.patch` - sends the patches
