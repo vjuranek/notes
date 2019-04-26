@@ -10,4 +10,6 @@
 
 * `dnf install git-email`
 * `git format-patch -N --to=to@email --cc=cc1@email --cc=cc2@email` - formats last N patches and sets TO and CC emails
+** to change subject (e.g. to include patch version), use `--subject-prefix="PATCH vX"`
+** to include cover latter, add `--cover-letter` and edit appropriate patch `0000-cover-letter.patch`, replacing all `***` (subject and body)
 * `git send-email --smtp-server=smtp.server.addr *.patch` - sends the patches
