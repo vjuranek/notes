@@ -4,3 +4,4 @@
 
 * `mknod -m 0660 /dev/loop0 b 7 0` - creates `/dev/loop0` (for `dev/loop1` it would be `mknod -m 0660 /dev/loop1 b 7 1`)
 * `chown root:disk /dev/loop0`
+* `losetup --find --show --sector-size 4096 /var/tmp/qcow/test.img`
