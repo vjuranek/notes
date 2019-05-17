@@ -11,6 +11,14 @@
 * `targetcli saveconfig`
 * `systemctl enable target`
 
+=== Firewall setup
+
+* `firewall-cmd --add-service=iscsi-target`
+* `firewall-cmd --add-service=iscsi-target --permanent`
+* `firewall-cmd --add-port=860/tcp`
+* `firewall-cmd --add-port=860/tcp --permanent`
+* `firewall-cmd --reload`
+
 == Info
 
 * `targetcli /backstores/fileio/ status`
