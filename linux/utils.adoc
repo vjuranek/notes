@@ -1,0 +1,3 @@
+= Utilities
+
+* `dmidecode -s system-serial-number` - shows computer serial number
