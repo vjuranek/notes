@@ -1,3 +1,4 @@
 = Virt builder
 
 * `virt-builder centos-7.6 --size 15G --format qcow2 --update -o /home/vjuranek/images/centos76.qcow2 --root-password file:/tmp/passwd`
+* `virt-builder fedora-29 --root-password=password:heslo -o ./fc29.img`
