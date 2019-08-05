@@ -1,0 +1,3 @@
+= QEMU
+
+* `Ctrl-a x` - terminates termina when using `-nographic`
