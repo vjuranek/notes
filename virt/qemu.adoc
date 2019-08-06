@@ -1,3 +1,6 @@
 = QEMU
 
+* `qemu-kvm -drive file=$PATH_TO_EMPTY_FILE,format=raw,cache=none,if=virtio -cdrom $PATH_TO_ISO -m 1024 -nographic` - run new VM from ISO
+* `-vnc 127.0.0.1:X` - start VNC server on display `X`
+
 * `Ctrl-a x` - terminates termina when using `-nographic`
