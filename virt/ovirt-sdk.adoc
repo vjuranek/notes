@@ -1,0 +1,5 @@
+= oVirt SDK
+
+== Python
+
+* `./upload_disk.py --engine-url https://ovirt.local --username admin@internal --sd-name gluster-domain -c /etc/pki/vdsm/certs/cacert.pem --direct /root/alpine-standard-3.10.1-x86_64.iso` - upload disk
