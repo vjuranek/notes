@@ -1,6 +1,7 @@
 = RPM
 
 * `rpm -q --scripts <package>` - list pre-install and post-install scripts run by installed packed
+* `rpm -e --nodeps <package>` - removes package without checking dependecies
 
 = Yum/dnf
 
