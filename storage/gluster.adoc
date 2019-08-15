@@ -1,0 +1,7 @@
+= Gluste
+
+== Volume
+
+=== Options
+
+* `gluster volume get $VOL_NAME $OPTION_NAME` - print `$OPTION_NAME` value for volume `$VOL_NAME`
