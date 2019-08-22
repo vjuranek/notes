@@ -27,3 +27,4 @@
 == Info
 
 * `targetcli /backstores/fileio/ status`
+* `targetcli /backstores/fileio/ ls`
