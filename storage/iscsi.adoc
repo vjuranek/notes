@@ -1,6 +1,6 @@
 = iSCSI
 
-== Setup
+== Target
 
 === Installation
 
@@ -24,7 +24,13 @@
 * `firewall-cmd --add-port=860/tcp --permanent`
 * `firewall-cmd --reload`
 
-== Info
+=== Info
 
 * `targetcli /backstores/fileio/ status`
 * `targetcli /backstores/fileio/ ls`
+
+== Initiator
+
+* `iscsiadm --mode discoverydb --type sendtargets --portal $TARGET_IP --discover`
+* `iscsiadm --mode node --targetname iqn.2016-01.com.ovirt:444 --portal $TARGET_IP --login`
+* `cat /proc/scsi/scsi`
