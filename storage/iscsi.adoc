@@ -6,15 +6,11 @@
 
 * `yum -y install targetcli`
 
-=== Prepare disk
-
-* `qemu-img create -f qcow2 /srv/storage/disk01.img 10G`
-
 === Target setup
 
 * `targetcli /iscsi/ create iqn.2016-01.com.ovirt:444`
 * `targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/ set attribute authentication=0 demo_mode_write_protect=0 generate_node_acls=1 cache_dynamic_acls=1`
-* `targetcli /backstores/fileio/ create disk01 /srv/storage/disk01.img 10G`
+* `targetcli /backstores/fileio/ create disk01 /srv/storage/disk01.img 3G`
 * `targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/luns create /backstores/fileio/disk01`
 * `targetcli /`
 * `targetcli saveconfig`
