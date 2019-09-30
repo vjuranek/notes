@@ -1,0 +1,10 @@
+= VDO
+
+== Installation
+
+* `yum -y install vdo kmod-kvdo`
+
+== Setup
+
+* `vdo create --name=vdo-vdb --device=/dev/vdb --vdoLogicalSize=50G`
+* `mkfs.xfs -K /dev/mapper/vdo-vdb`
