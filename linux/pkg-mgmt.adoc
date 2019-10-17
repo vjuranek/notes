@@ -18,7 +18,7 @@
 * `mkdir -p  /mnt/dvd`
 * `mount -o loop /dev/sr0 /mnt/dvd`
 * `mount /dev/sr0  /mnt/dvd`
-* `cp /mnt/disc/media.repo /etc/yum.repos.d/rhel8-dvd.repo`
+* `cp /mnt/dvd/media.repo /etc/yum.repos.d/rhel8-dvd.repo`
 * `vi /etc/yum.repos.d/rhel8-dvd.repo`
 
 [source, shell]
