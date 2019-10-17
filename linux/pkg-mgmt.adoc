@@ -25,12 +25,12 @@
 ----
 [BaseOS]
 name=Red Hat Enterprise Linux 8.1.0 BaseOS
-baseurl=file:///mnt/disc/BaseOS
+baseurl=file:///mnt/dvd/BaseOS
 gpgcheck=0
 
 [AppStream]
 name=Red Hat Enterprise Linux 8.1.0 Appstream
-baseurl=file:///mnt/disc/AppStream
+baseurl=file:///mnt/dvd/AppStream
 gpgcheck=0
 ----
 
