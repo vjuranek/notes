@@ -11,6 +11,29 @@
 * `dnf list available $package_name` - shows all available package vesrions (`yum list --showduplicates $package_name` should work as well)
 * `yum-builddep $pkg` - install build dependencies for package or spec file
 
+== Repo setup
+
+=== Repo from DVD/ISO
+
+* `mkdir -p  /mnt/dvd`
+* `mount -o loop /dev/sr0 /mnt/dvd`
+* `mount /dev/sr0  /mnt/dvd`
+* `cp /mnt/disc/media.repo /etc/yum.repos.d/rhel8-dvd.repo`
+* `vi /etc/yum.repos.d/rhel8-dvd.repo`
+
+[source, shell]
+----
+[BaseOS]
+name=Red Hat Enterprise Linux 8.1.0 BaseOS
+baseurl=file:///mnt/disc/BaseOS
+gpgcheck=0
+
+[AppStream]
+name=Red Hat Enterprise Linux 8.1.0 Appstream
+baseurl=file:///mnt/disc/AppStream
+gpgcheck=0
+----
+
 == Yum utils
 
 * `yum install yum-utils`
