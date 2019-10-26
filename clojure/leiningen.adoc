@@ -1,8 +1,14 @@
 = Leiningen
 
-== General
+== REPL
 
 * Leiningen Clojure REPL: `lein repl`
+
+=== Connect Idea to REPL
+
+* start `lein repl`
+* it will open some local repl port, e.g. `nrepl://127.0.0.1:37801`
+* in Idea `Tools -> Clojure -> Connect to REPL`
 
 == Project
 
