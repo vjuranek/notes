@@ -29,6 +29,26 @@
 * `targetcli /backstores/fileio/ status`
 * `targetcli /backstores/fileio/ ls`
 
+
+=== Issues
+
+==== qemu-img got stuck
+
+===== Isssue
+`qemu-img` got stuck during copying from one iscsi to another with and on the targer `dmesg` is `WRITE_SAME sectors: 65535 exceeds max_write_same_len: 4096`
+
+===== Fix
+Actually doesn't fully fix it, but solve issue with `max_write_same_len`:
+
+```
+targetcli /backstores/fileio/my-disk set attribute \
+    emulate_tpu=1 \
+    emulate_tpws=1 \
+    max_write_same_len=65335
+```
+
+See https://lists.ovirt.org/archives/list/devel@ovirt.org/thread/ZDNOVHOANZSMXN5WM73LQPKX3UEGBFV3/
+
 == Initiator
 
 * `iscsiadm --mode discoverydb --type sendtargets --portal $TARGET_IP --discover`
