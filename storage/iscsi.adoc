@@ -52,5 +52,10 @@ See https://lists.ovirt.org/archives/list/devel@ovirt.org/thread/ZDNOVHOANZSMXN5
 == Initiator
 
 * `iscsiadm --mode discoverydb --type sendtargets --portal $TARGET_IP --discover`
-* `iscsiadm --mode node --targetname iqn.2016-01.com.ovirt:444 --portal $TARGET_IP --login`
+* `iscsiadm --mode node --targetname iqn.2016-01.com.ovirt:444 --portal $TARGET_IP -l` -  login to target
+* `iscsiadm --mode node --targetname iqn.2016-01.com.ovirt:444 --portal $TARGET_IP -u` - logout from target
+* `iscsiadm -m session` - show active sessions
+* `iscsiadm -m session  -P 3` - detail list
+
+
 * `cat /proc/scsi/scsi`
