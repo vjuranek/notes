@@ -8,3 +8,7 @@
 
 == Fresh install
 * `sudo -i` and once under the root `passwd` - to get root access and set up root password if the root passwd is not asked during installation (gnome)
+
+== Fonts
+
+* if fonts get broken out of the blue, try to remove/rename `~/.fonts.conf` (which is a sym link to `~/.config/fontconfig/fonts.conf`)
