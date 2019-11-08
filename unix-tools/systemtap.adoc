@@ -1,0 +1,19 @@
+= systemtap
+
+== Installation
+
+* `dnf install systemtap kernel-devel`
+* eventually install `kernel-devel` version as requested by systemtap
+* try to run `stap hello.stp` (see hello script bellow)
+
+== Simple scripts
+
+Hello world script:
+
+[source,c]
+----
+probe begin {
+  printf("works!\n")
+  exit()
+}
+----
