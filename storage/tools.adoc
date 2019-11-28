@@ -1,0 +1,3 @@
+= Storage related tools
+
+* `wipefs` - wipe a signature from a device
