@@ -51,11 +51,24 @@ See https://lists.ovirt.org/archives/list/devel@ovirt.org/thread/ZDNOVHOANZSMXN5
 
 == Initiator
 
+=== Installation
+
+* `dnf install iscsi-initiator-utils`
+
+
+=== Connecting to target
+
 * `iscsiadm --mode discoverydb --type sendtargets --portal $TARGET_IP --discover`
 * `iscsiadm --mode node --targetname iqn.2016-01.com.ovirt:444 --portal $TARGET_IP -l` -  login to target
 * `iscsiadm --mode node --targetname iqn.2016-01.com.ovirt:444 --portal $TARGET_IP -u` - logout from target
+
+=== Info
+
 * `iscsiadm -m session` - show active sessions
 * `iscsiadm -m session  -P 3` - detail list
 
-
 * `cat /proc/scsi/scsi`
+
+=== Issues
+
+* use IPv4 address instead hostname to avoid connection issue when IPv6 is not setup properly (nad hostname resolves to IPv6 address)
