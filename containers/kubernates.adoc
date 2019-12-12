@@ -6,6 +6,7 @@
 * `kubectl get pods`
 * `kubectl get services`
 * `kubectl describe pods`
+* `kubectl create -f app.yaml`
 
 == Deployments
 
@@ -18,6 +19,7 @@
 == Debug
 
 * `kubectl logs $POD_NAME`
+* `kubectl logs $POD_NAME -c $CONTAINER_NAME` - in case pod contains multiple containers
 * `kubectl get events`
 * `kubectl cluster-info`
 * `kubectl cluster-info dump`
@@ -25,10 +27,12 @@
 
 == Netwotking
 
+* `kubectl port-forward app $LOCAL_PORT:$POD_PORT`
 
 == Minikube
 
 * `minikune ssh` - ssh to Minikube VM
+* `minikube dashboard` - start dashboard
 
 === References
 * https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727
