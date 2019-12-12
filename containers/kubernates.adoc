@@ -47,8 +47,12 @@
 
 == Minikube
 
+* `minikube start --vm-driver=kvm2` - start minikube using kvm driver
+* `minikube config set vm-driver kvm2` - make kvm2 default driver
 * `minikune ssh` - ssh to Minikube VM
 * `minikube dashboard` - start dashboard
+* `minikube delete`
+
 
 === References
 * https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727
