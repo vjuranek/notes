@@ -1,12 +1,28 @@
 = Kubernates
 
-== Basic commands
+== Pods
 
 * `kubectl get deployments` list deployments
+
+* `kubectl run kube-test --image=vjuranek/kubetest --port=8080 --generator=run/v1`
+* `kubectl delete all --all`
+
 * `kubectl get pods`
 * `kubectl get services`
 * `kubectl describe pods`
 * `kubectl create -f app.yaml`
+* `kubectl delete pod $POD_NAME`
+
+== Replication controllers
+
+* `kubectl get rc` - get replication controllers
+* `kubectl scale rc app_rc --replicas=3`
+
+== Services
+
+* `kubectl expose rc app_rc --type=LoadBalancer --name app-http`
+* `kubectl get svc` - get service
+
 
 == Deployments
 
