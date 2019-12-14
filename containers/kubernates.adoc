@@ -13,6 +13,9 @@
 * `kubectl create -f app.yaml`
 * `kubectl delete pod $POD_NAME`
 
+* `kubectl exec $CONTAINER_NAME -- $CMD` - execute command in container (`--` can be skipped if command doesn't contain options with dashes)
+* `kubectl exec -it $CONTAINER_NAME bash` - runs interactive bash in the container
+
 == Replication controllers
 
 Deprecated, ReplicaSet should be used instead.
