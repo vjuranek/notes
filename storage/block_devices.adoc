@@ -1,3 +1,4 @@
 = Block devices
 
+* `lsscsi` - list SCSI devices
 * `echo 1 > /sys/block/device-name/device/delete` - remove `device-name` from SCSI subsystem
