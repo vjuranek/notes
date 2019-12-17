@@ -8,7 +8,8 @@
 * `kubectl delete all --all`
 
 * `kubectl get pods`
-* `kubectl get services`
+* `kubectl get po -o wide`
+* `kubectl get po $POD_NAME -o yaml/json` - pod descriptio in yaml/json format
 * `kubectl describe pods`
 * `kubectl create -f app.yaml`
 * `kubectl delete pod $POD_NAME`
@@ -27,6 +28,7 @@ Deprecated, ReplicaSet should be used instead.
 
 * `kubectl expose rc app_rc --type=LoadBalancer --name app-http`
 * `kubectl get svc` - get service
+* `kubectl delete service $SVC_NAME`
 
 
 == Deployments
@@ -49,6 +51,10 @@ Deprecated, ReplicaSet should be used instead.
 == Netwotking
 
 * `kubectl port-forward app $LOCAL_PORT:$POD_PORT`
+
+=== Ingress
+
+* `kubectl get ingress`
 
 == Minikube
 
