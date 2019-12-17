@@ -58,6 +58,8 @@ Deprecated, ReplicaSet should be used instead.
 * `minikube dashboard` - start dashboard
 * `minikube delete`
 
+* `minikube addons list` -list minikube addons
+* `minikube addons enable ingress` - enables ingress on minikube
 
 === References
 * https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727
