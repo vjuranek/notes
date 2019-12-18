@@ -1,5 +1,9 @@
 = Git howto
 
+== Commits
+
+* `git commit --amend --author="name <email>"` - change commit author of the last commit
+
 == Git log
 
 * `git log a..b` - git log in range from commit hash `a` to `b`
