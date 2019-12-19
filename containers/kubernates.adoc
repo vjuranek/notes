@@ -1,5 +1,9 @@
 = Kubernates
 
+== General
+
+* `kubeclt explain <pods, ...>`
+
 == Pods
 
 * `kubectl get deployments` list deployments
