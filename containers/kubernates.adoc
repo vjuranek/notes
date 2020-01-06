@@ -12,6 +12,7 @@
 * `kubectl delete all --all`
 
 * `kubectl get pods`
+* `kubectl get pods --watch`
 * `kubectl get po -o wide`
 * `kubectl get po $POD_NAME -o yaml/json` - pod descriptio in yaml/json format
 * `kubectl describe pods`
@@ -55,6 +56,9 @@ Deprecated, ReplicaSet should be used instead.
 == Netwotking
 
 * `kubectl port-forward app $LOCAL_PORT:$POD_PORT`
+
+* `kubectl proxy`
+* ambassador container pattern
 
 === Ingress
 
