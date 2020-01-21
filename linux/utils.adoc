@@ -1,3 +1,5 @@
 = Utilities
 
 * `dmidecode -s system-serial-number` - shows computer serial number
+
+* `xhost` - manage access for users for X server
