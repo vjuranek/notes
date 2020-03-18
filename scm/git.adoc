@@ -4,6 +4,13 @@
 
 * `git commit --amend --author="name <email>"` - change commit author of the last commit
 
+To edit more/older commits:
+
+* `git rebase -i HEAD~X`
+* use `edit` for commits to be changed
+* `git commit --amend --author="name <email>"`
+* `git rebase --continue`
+
 == Git log
 
 * `git log a..b` - git log in range from commit hash `a` to `b`
