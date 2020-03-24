@@ -1,0 +1,10 @@
+= oVirt host
+
+== FC30
+If host installation faisl due to network issue, disable nmsatate:
+[source, bash]
+----
+[root@ovirt-fc ~]# cat /etc/vdsm/vdsm.conf.d/99-disable-nmstate.conf 
+[vars]
+net_nmstate_enabled=false
+----
