@@ -1,5 +1,12 @@
 = SSH
 
+== sshd
+
+=== Enable root login
+
+* set `PermitRootLogin yes` in `/etc/ssh/sshd_config`
+* see https://fedoraproject.org/wiki/Changes/DisableRootPasswordLoginInSshd for more details
+
 == Port forwarding
 
 * `ssh -L 11222:127.0.0.1:11222 -N -o StrictHostKeyChecking=true fedora@10.1.1.1` - forwards port 11222 binded to localhost of 10.1.1.1 to 11222 on localhost of machine which iniated the ssh tunnel. If strict host checking is disabled (e.g. in ssh confgi by default for all cloud machines), port forwarding is disabled as well.
