@@ -1,0 +1,5 @@
+= Security
+
+== Passwords
+
+* `/etc/security/pwquality.conf` configuration of password quality
