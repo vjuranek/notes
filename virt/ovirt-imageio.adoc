@@ -1,0 +1,5 @@
+= oVirt imageio
+
+== Uploading image via browser
+* make sure enfine certificates are truted by browser, to anbel it, just visit anf Firefox will ask
+`https://ovirt-imageio.local/ovirt-engine/services/pki-resource?resource=ca-certificate&format=X509-PEM-CA`
