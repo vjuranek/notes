@@ -2,3 +2,7 @@
 
 * `virt-builder centos-7.7 --size 10G --format qcow2 --root-password=password:passwd -o /home/vjuranek/images/vm/centos77.img`
 * `virt-builder fedora-29 --root-password=password:heslo -o ./fc29.img`
+
+= guestfish
+
+Command-line tool for examining and modifying virtual machine filesystems, see http://libguestfs.org/guestfish.1.html
