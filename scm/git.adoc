@@ -11,6 +11,8 @@ To edit more/older commits:
 * `git commit --amend --author="name <email>"`
 * `git rebase --continue`
 
+* `git reset HEAD^` - remove last commit, but keep files changed
+
 == Git log
 
 * `git log a..b` - git log in range from commit hash `a` to `b`
