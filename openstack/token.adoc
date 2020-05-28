@@ -1,0 +1,29 @@
+= OpenStack token
+
+== Obtain token via curl
+
+* `curl -i -H "Content-Type: application/json" -d @auth.json  http://192.168.122.148:5000/v3/auth/tokens`
+* Request can be unscoped or scoped. In most of the cases scoped request is needed.
+
+* `auth.json`:
+[source, json]
+----
+{ "auth": {
+    "identity": {
+      "methods": ["password"],
+      "password": {
+        "user": {
+          "name": "admin",
+	  "domain": { "id": "default" },  
+          "password": "my_password"
+        }
+      }
+    },
+    "scope": {
+        "system": {
+            "all": true
+        }
+    }
+  }
+}
+----
