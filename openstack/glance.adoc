@@ -3,3 +3,8 @@
 == Creating images
 
 * `glance image-create --name debian-9.4.5 --disk-format qcow2 --file debian-9.4.5-openstack-amd64.qcow2 --container-format bare` 
+
+=== Creating image using curl (v2 API)
+
+* `curl -i -X POST -H "X-Auth-Token:gAAAAABez7Rgk67PUFAXC4309ulvRJpkSBlinYBN5hCtRLeKdUUZToMNepuPE1cIMSs09Mluda5Kg2i5mPZyfPb6Da7MOsOqGpxLX05EKmZYJmbD2txqPyl2HRKyi_6WqK0oVc3A8PRYeD7ZGnNxDyih_BZnJkodig" -H "Content-Type: application/json" -d '{"id": "7b97f37c-899d-44e8-aaa0-543edbc4aaaa", "disk_format": "qcow2", "container_format": "bare"}' http://192.168.122.148:9292/v2/images`
+* `curl -i -X PUT -H "X-Auth-Token:gAAAAABez7Rgk67PUFAXC4309ulvRJpkSBlinYBN5hCtRLeKdUUZToMNepuPE1cIMSs09Mluda5Kg2i5mPZyfPb6Da7MOsOqGpxLX05EKmZYJmbD2txqPyl2HRKyi_6WqK0oVc3A8PRYeD7ZGnNxDyih_BZnJkodig" -H "Content-Type: application/octet-stream" --data-binary @cirros-035.img http://192.168.122.148:9292/v2/images/7b97f37c-899d-44e8-aaa0-543edbc4aaaa/file`
