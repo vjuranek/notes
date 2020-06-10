@@ -1,5 +1,8 @@
 = IPv6
 
+== Common utils
+* `ssh <username>@<ipv6 address>%<interface>` when ipv6 address is link-local address (address starts with `fe80::`)
+
 == Disable IPv6
 
 * add into `/etc/sysctl.conf` (run `sysctl -p` to take effect):
