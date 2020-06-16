@@ -14,3 +14,8 @@ lvdisplay
 lvextend /dev/fedora_localhost-live/root /dev/vdb1
 resize2fs /dev/fedora_localhost-live/root
 ----
+
+
+== Misc
+
+* `file -s <device>` - checks, if the device is LVM device (output should be something like `<device>: LVM2 PV (Linux Logical Volume Manager) ...`)
