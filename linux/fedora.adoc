@@ -12,3 +12,8 @@
 == Fonts
 
 * if fonts get broken out of the blue, try to remove/rename `~/.fonts.conf` (which is a sym link to `~/.config/fontconfig/fonts.conf`)
+
+
+== Keyrings
+
+* `rm ~/.local/share/keyrings/*` to reset keyring passowrd
