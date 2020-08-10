@@ -1,3 +1,4 @@
 = Emacs commands
 
 * `ctrl+x+<tab>` - text/block indentation (command `indent-rigidly`)
+* `M-x fill-region`/`M-x fill-paragraph` - break lines into shoter
