@@ -7,3 +7,7 @@
 == networking
 
 * `cat /var/lib/libvirt/dnsmasq/virbr0.status` - list IP addresses of VMs, hostnames and MAC addresses
+
+== virsh
+
+* `domblklist domain_name` - info about VM block devices

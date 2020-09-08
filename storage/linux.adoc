@@ -1,0 +1,3 @@
+= Linux storage
+
+* `/proc/devices` - list of major numbers and names of the char and block devices configured
