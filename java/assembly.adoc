@@ -25,3 +25,4 @@ java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly -version
 === Links
 
 * https://wiki.openjdk.java.net/display/HotSpot/PrintAssembly
+* https://stackoverflow.com/questions/9337670/hotspot7-hsdis-printassembly-intel-syntax
