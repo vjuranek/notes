@@ -6,6 +6,11 @@
 * `dnf install system-switch-displaymanager system-switch-displaymanager-gnome`
 * run `system-switch-displaymanager` and select display manager
 
+== Run level
+
+* `systemctl set-default graphical.target` - switch to boot to graphical target (login)
+* `systemctl get-default` - show current default target
+
 == Fresh install
 * `sudo -i` and once under the root `passwd` - to get root access and set up root password if the root passwd is not asked during installation (gnome)
 
