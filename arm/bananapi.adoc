@@ -15,3 +15,4 @@
 
 * `dnf install arm-image-installer`
 * `fedora-arm-image-installer --image=Fedora-Minimal-armhfp-29-1.2-sda.raw.xz --target=Bananapi --media=/dev/mmcblk0`
+* `fedora-arm-image-installer --resizefs -y --addconsole --image=Fedora-Minimal-armhfp-29-1.2-sda.raw.xz --target=Bananapi --media=/dev/mmcblk0`
