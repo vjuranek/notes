@@ -1,0 +1,13 @@
+= JVM
+
+== JVM flags
+
+=== TLAB
+
+* `-XX:-UseTLAB` - turn off TLAB (on by default).
+* `-XX:+PrintTLAB` - log TLAB usage during each minor GC. `desired_size` is current TLAB size.
+* `-XX:TLABSize` - initial size of TLAB.
+* `-XX:MinTLABSize` - minimal TLAB size (`-XX:TLABSize` cannot be smaller than this value).
+* `-XX:ResizeTLAB` - allows JVM to resize TLAB size dynamically (turn on by default).
+* `-XX:TLABWasteTargetPercent=N` - threshold for allocating object outside TLAB, so called slow allocation (for objects under this limit which doesn't fit into existing TLAB, new TLAB is created, unused rest of the old TLAB is waste). Default is 1 (1% of TLAB size).
+* `-XX:TLABWasteIncrement=N` - how much is `TLABWasteTargetPercent` automatically incremented after each slow allocation. The default is 4 (4%).
