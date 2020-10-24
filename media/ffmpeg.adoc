@@ -1,3 +1,7 @@
 = FFmpeg
 
 * `ffmpeg -i <video.mp4> -i <audio.m4a> -acodec copy -vcodec copy <output.mp4>` - merge audio and video file into one
+
+== Pic to movie
+
+* `cat *.JPG | ffmpeg -f image2pipe -r 2 -s 720x480 -vcodec mjpeg -i - -vcodec libx264 out.mp4`
