@@ -1,6 +1,6 @@
 = FFmpeg
 
-* `ffmpeg -i <video.mp4> -i <audio.m4a> -acodec copy -vcodec copy <output.mp4>` - merge audio and video file into one
+* `ffmpeg -i <video.mp4> -i <audio.m4a> -acodec copy -vcodec copy <output.mp4>` - merge audio and video file into one. Use `-shortest` to cut the longer track.
 * `ffmpeg -i test.mkv -vn -acodec copy sound.opus` - extract audio track from video. Output format is determined based on file extension. If ffmepg fails, check its output to determine right audio format in the video.
 
 == Pic to movie
