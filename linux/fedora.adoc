@@ -6,6 +6,16 @@
 * `dnf install system-switch-displaymanager system-switch-displaymanager-gnome`
 * run `system-switch-displaymanager` and select display manager
 
+=== Login without password
+Edit `/etc/gdm/custom.conf` and set
+[source, shell]
+----
+[daemon]
+AutomaticLoginEnable=true
+AutomaticLogin=<user_to_be_logged_in_without_passwd>
+----
+
+
 == Run level
 
 * `systemctl set-default graphical.target` - switch to boot to graphical target (login)
