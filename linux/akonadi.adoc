@@ -1,0 +1,5 @@
+= Akonadi / KMail
+
+* kmail stuck with "Updateing items 0%"
+  * try clear akonadi cache in akonadibrowser
+  * if doesn't help, delete appropriate agent data changes file, e.g. `rm .config/akonadi/agent_config_akonadi_imap_resource_2_changes.dat` (in general pattern `~/.config/akonadi/agent_config_akonadi*changes.dat`)
