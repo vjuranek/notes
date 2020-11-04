@@ -1,0 +1,14 @@
+= Files
+
+== Fake files
+
+=== ISO
+
+ISO files have `CD001` at offset `0x8001`.
+
+[source, python]
+----
+with open("test.iso", "wb") as f:
+     f.seek(0x8001)
+     f.write(b"CD001")
+----
