@@ -1,0 +1,5 @@
+= Alsa
+
+== Alsa mixer
+* `alsamixer`
+* `sudo alsactl store`
