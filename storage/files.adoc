@@ -4,11 +4,11 @@
 
 === ISO
 
-ISO files have `CD001` at offset `0x8001`.
+ISO files have `CD001` at offset `0x8001`. `0x01` before and after this and this part ends with empty field `0x00`.
 
 [source, python]
 ----
 with open("test.iso", "wb") as f:
-     f.seek(0x8001)
-     f.write(b"CD001")
+     f.seek(0x8000)
+     f.write(b"\x01CD001\x01\x00")
 ----
