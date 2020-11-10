@@ -8,3 +8,7 @@ If host installation faisl due to network issue, disable nmsatate:
 [vars]
 net_nmstate_enabled=false
 ----
+
+== Fencing
+
+* `fence_xvm` and `fence_virt` - fence agent for VMs, see also https://access.redhat.com/solutions/917833
