@@ -1,5 +1,10 @@
 = Utilities
 
+== Hardware related utilities
+
 * `dmidecode -s system-serial-number` - shows computer serial number
+* `hdparm` - get/set SATA/IDE device parameters
+
+== Video, X server etc.
 
 * `xhost` - manage access for users for X server
