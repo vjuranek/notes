@@ -2,6 +2,7 @@
 
 == Hardware related utilities
 
+* `lshw` - list hardware
 * `dmidecode -s system-serial-number` - shows computer serial number
 * `hdparm` - get/set SATA/IDE device parameters
 
