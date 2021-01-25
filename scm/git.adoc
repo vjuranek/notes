@@ -20,6 +20,11 @@ To edit more/older commits:
 * `git log --grep=$pattern --pretty=format:"%h"` - select commit containing <patter> and show only short commit hashes (`%H` for full commit hash)
 * `git log --author=vjuranek@rh.c --pretty=format:"%h %an %s"` - my commits, containing short hash, commiter name (to double check:-) and commit subject
 
+=== Removed file
+
+* `git log -p --full-history -- "**/file_name.*"` - git log for a file which was already deleted
+* `git log -p --full-history -- <path-to-file>`
+
 == Git email
 
 * `dnf install git-email`
