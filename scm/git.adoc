@@ -22,7 +22,7 @@ To edit more/older commits:
 
 === Removed file
 
-* `git log -p --full-history -- "**/file_name.*"` - git log for a file which was already deleted
+* `git log -p --full-history -- "+**/file_name.*+"` - git log for a file which was already deleted
 * `git log -p --full-history -- <path-to-file>`
 
 == Git email
