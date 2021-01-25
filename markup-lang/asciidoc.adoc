@@ -1,0 +1,3 @@
+= Asciidoc
+
+* use `+` to escape formatting characters, e.g. `*strong*` vs. `+*not strong*+`
