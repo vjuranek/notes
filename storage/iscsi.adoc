@@ -30,6 +30,12 @@
 * `targetcli /backstores/fileio/ ls`
 
 
+== Remove
+
+=== Remove LUNs
+
+* `targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/luns delete <LUN_NUMBER>`
+
 === Issues
 
 ==== qemu-img got stuck
