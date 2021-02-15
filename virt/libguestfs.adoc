@@ -6,3 +6,7 @@
 = guestfish
 
 Command-line tool for examining and modifying virtual machine filesystems, see http://libguestfs.org/guestfish.1.html
+
+
+* `virt-sparsify`
+* `virt-customize`
