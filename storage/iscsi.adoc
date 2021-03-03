@@ -78,3 +78,9 @@ See https://lists.ovirt.org/archives/list/devel@ovirt.org/thread/ZDNOVHOANZSMXN5
 === Issues
 
 * use IPv4 address instead hostname to avoid connection issue when IPv6 is not setup properly (nad hostname resolves to IPv6 address)
+
+
+= SCSI utils
+
+* `sg_turs` - send one or more SCSI TEST UNIT READY commands
+* `sg_turs /dev/sdX; echo $?` - if `0`, device is ready
