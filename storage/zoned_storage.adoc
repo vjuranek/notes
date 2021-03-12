@@ -1,7 +1,7 @@
 = Zoned storage
 
-* `cat /boot/config-`uname -r` | grep CONFIG_BLK_DEV_ZONED` - check, is kernel was compiled with zoned storage support, output should be `CONFIG_BLK_DEV_ZONED=y`
-* `cat /lib/modules/`uname -r`/config | grep CONFIG_BLK_DEV_ZONED` - same as above
+* `cat /boot/config-``uname -r`` | grep CONFIG_BLK_DEV_ZONED` - check, is kernel was compiled with zoned storage support, output should be `CONFIG_BLK_DEV_ZONED=y`
+* `cat /lib/modules/``uname -r``/config | grep CONFIG_BLK_DEV_ZONED` - same as above
 
 == Emulation with `nullblk`
 
