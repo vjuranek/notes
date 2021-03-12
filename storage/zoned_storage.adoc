@@ -7,3 +7,11 @@
 
 * `modprobe null_blk nr_devices=1 zoned=1`
 * `blkzone report /dev/nullb0`
+
+== libzbc
+
+* `git clone https://github.com/westerndigitalcorporation/libzbc.git`
+* `dnf -y install autoconf autoconf-archive automake libtool`
+* `./autogen.sh`
+* `./configure`
+* `make rpm`
