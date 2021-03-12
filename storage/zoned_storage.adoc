@@ -1,0 +1,6 @@
+= Zoned storage
+
+== Emulation with `nullblk`
+
+* `modprobe null_blk nr_devices=1 zoned=1`
+* `blkzone report /dev/nullb0`
