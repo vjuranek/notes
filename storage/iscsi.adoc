@@ -84,3 +84,4 @@ See https://lists.ovirt.org/archives/list/devel@ovirt.org/thread/ZDNOVHOANZSMXN5
 
 * `sg_turs` - send one or more SCSI TEST UNIT READY commands
 * `sg_turs /dev/sdX; echo $?` - if `0`, device is ready
+* `sg_persist` - manage SCSI reservation (see also `mpathpersist` for multipath equivalent)
