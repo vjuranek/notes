@@ -86,3 +86,17 @@ See https://lists.ovirt.org/archives/list/devel@ovirt.org/thread/ZDNOVHOANZSMXN5
 * `sg_turs /dev/sdX; echo $?` - if `0`, device is ready
 * `sg_inq /dev/sdb` - issue SCSI INQUIRY command, e.g. to check if LUN is SPC3 compliant (output contains `[SPC-3]`)
 * `sg_persist` - manage SCSI reservation (see also `mpathpersist` for multipath equivalent)
+* `sg_persist --in -k -d /dev/sbd` - view the keys registered on a LUN
+* `sg_persist --in -r -d /dev/sdb` - view the reservations on a LUN
+* `sg_persist --in -s -d /dev/sdb` -  to view more info
+* `sg_persist --out --register --param-sark=<KEY> /dev/sdb` - to register a key
+* `sg_persist --out --reserve --param-rk=<KEY> --prout-type=<TYPE> /dev/sdb` - to reserve registered key:
+** 1 write exclusive
+** 3 exclusive access
+** 5 write exclusive - registrants only
+** 6 exclusive access - registrants only
+** 7 write exclusive - all registrants
+** 8 exclusive access - all registrants.
+* `sg_persist --out --release --param-rk=<KEY> --prout-type=<TYPE> /dev/sdb` - to relase a reservation
+* `sg_persist --out --register --param-rk=<KEY> /dev/sdb` - to unregister a key
+* `sg_persist --out --clear --param-rk=<KEY> /dev/sbd` -  to clear the reservation and all registered keys
