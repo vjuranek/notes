@@ -5,6 +5,6 @@
 * `mpathpersist --in -k -d /dev/mapper/mpath` - view reservation keys
 * `mpathpersist --in -r -d /dev/mapper/mpath` -  view reservations
 * `mpathpersist --out --register --param-sark <KEY> -d /dev/mapper/mpath` - register reservation key on a device
-* `mpathpersist --out --reserve --param-rk=<KEY> --prout-type=5 /dev/mapper/mpath ` - create reservation (see iscsi.adoc for prout types)
+* `mpathpersist --out --reserve --param-rk=<KEY> --prout-type=5 /dev/mapper/mpath` - create reservation (see iscsi.adoc for prout types)
 * `mpathpersist --out --release --param-rk=<KEY> --prout-type=5 /dev/mapper/mpath` - release reservation
 * `mpathpersist --out --register --param-rk=<KEY> /dev/mapper/mpath` - unregister key
