@@ -84,4 +84,5 @@ See https://lists.ovirt.org/archives/list/devel@ovirt.org/thread/ZDNOVHOANZSMXN5
 
 * `sg_turs` - send one or more SCSI TEST UNIT READY commands
 * `sg_turs /dev/sdX; echo $?` - if `0`, device is ready
+* `sg_inq /dev/sdb` - issue SCSI INQUIRY command, e.g. to check if LUN is SPC3 compliant (output contains `[SPC-3]`)
 * `sg_persist` - manage SCSI reservation (see also `mpathpersist` for multipath equivalent)
