@@ -1,5 +1,9 @@
 = LVM
 
+== Basic
+
+* `lvs --config 'devices {filter=["a|.*|"]}'` - all devices, no filtering
+
 == Extending disk
 
 [source, shell]
