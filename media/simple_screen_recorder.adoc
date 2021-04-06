@@ -1,0 +1,3 @@
+= Simple screen recorder
+
+* `Alt-r` - start/stop screen recording (configurable via `Hot key`)
