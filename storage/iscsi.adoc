@@ -4,7 +4,7 @@
 
 === Installation
 
-* `yum -y install targetcli`
+* `dnf -y install targetcli`
 
 === Target setup
 
