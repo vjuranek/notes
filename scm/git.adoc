@@ -14,6 +14,8 @@ To edit more/older commits:
 
 * `git reset HEAD^` - remove last commit, but keep files changed
 
+* `git describe <commit>` - find most recent tag that is reachable from this commit (i.e. in which tag this commit is contained)
+
 === Rebase
 
 * `git rebase -i --root` - rebase to the first commit
