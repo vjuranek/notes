@@ -1,3 +1,5 @@
 = Storage related tools
 
-* `wipefs` - wipe a signature from a device
+* `wipefs -a /dev/mapper/device` - wipe a signature from a device
+
+* `kpartx -d /dev/mapper/device` - delete partition mappings from device
