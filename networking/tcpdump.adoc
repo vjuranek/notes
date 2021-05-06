@@ -1,0 +1,14 @@
+= tcpdump
+
+== Basic commands
+
+* `tcpdump --list-interfaces` - list all network interfaces
+* `tcpdump -i enp1s0` - capture packates on `enp1s0`
+* `tcpdump -i enp1s0 -c 5` - capture only 5 packets
+* `tcpdump -i enp1s0 -nn` -  capture packaet and don't resolve IP addresses
+* `tcpdump -i enp1s0 -nn tcp` - capture only TCP packates
+* `tcpdump -i enp1s0 -nn host <IP address>` - filter packates for given IP address
+* `tcpdump -i enp1s0 -nn src <IP address>` - filter packets based on source address
+* `tcpdump -i enp1s0 -nn dst <IP address>` - filter packets based on destination address
+* `tcpdump -i enp1s0 -nn port <port number>` - filter only packets for specifies port
+* `tcpdump -i enp1s0 -nn dst <IP address> and tcp` - combine above filters using `and`
