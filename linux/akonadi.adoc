@@ -3,3 +3,7 @@
 * kmail stuck with "Updateing items 0%"
   ** either try clear akonadi cache of stuck folder (if it's clear which folder has sync issue) in akonadibrowser
   ** or (if clearing cache doesn't help or it's not clear which folder has sync issue) delete appropriate agent data changes file, e.g. `rm .config/akonadi/agent_config_akonadi_imap_resource_2_changes.dat` (in general pattern `~/.config/akonadi/agent_config_akonadi*changes.dat`)
+
+= Baloo
+
+* `balooctrl disable` - disable Baloo, file search an indexing
