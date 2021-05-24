@@ -10,6 +10,7 @@
 * `yum downgrade $package_name-$version_info` - downgrades to specified version
 * `dnf list available $package_name` - shows all available package vesrions (`yum list --showduplicates $package_name` should work as well)
 * `yum-builddep $pkg` - install build dependencies for package or spec file
+* `dnf list installed` - list installed packaged
 
 == Repo setup
 
