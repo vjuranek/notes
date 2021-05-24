@@ -3,3 +3,8 @@
 * `wipefs -a /dev/mapper/device` - wipe a signature from a device
 
 * `kpartx -d /dev/mapper/device` - delete partition mappings from device
+
+== SMART
+
+* `dnf install smartmontools`
+* `smartctl -a /dev/sda`
