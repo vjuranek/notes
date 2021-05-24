@@ -5,6 +5,7 @@
 * `lshw` - list hardware
 * `dmidecode -s system-serial-number` - shows computer serial number
 * `hdparm` - get/set SATA/IDE device parameters
+* `smartctl -a /dev/sda` - SMART disk info
 
 == Video, X server etc.
 
