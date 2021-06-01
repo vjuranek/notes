@@ -1,0 +1,6 @@
+= Virt devices
+
+== USB
+
+* create USB redirect
+* in virt-manager click `Virtual machine` -> `Redirect USB device`
