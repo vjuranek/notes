@@ -1,0 +1,5 @@
+= Network Manager
+
+== nmcli
+
+* `nmcli connection import type openvpn file my_vpn.ovpn` - add VPN using ovpn file
