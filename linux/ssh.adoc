@@ -13,6 +13,7 @@
 
 == X11 forwarding
 
+* set `X11Forwarding yes` in `/etc/ssh/sshd_config`
 * `dnf -y install xorg-x11-server-Xorg xorg-x11-xauth xorg-x11-apps x11-ssh-askpass`
 * `ssh -Y username@machine`
 * `export DISPLAY=:0.0`
