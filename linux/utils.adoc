@@ -10,3 +10,8 @@
 == Video, X server etc.
 
 * `xhost` - manage access for users for X server
+
+
+== Security
+
+* `srm` - secure delete
