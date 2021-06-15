@@ -8,6 +8,17 @@
 
 * `cat /var/lib/libvirt/dnsmasq/virbr0.status` - list IP addresses of VMs, hostnames and MAC addresses
 
+=== Static VM IP address
+
+* `virsh net-list`
+* `virsh net-edit <network-name>` (`virsh net-edit default`)
+* add `<host mac='52:54:00:95:62:31' name='vm-name' ip='192.168.122.133'/>` under `<network><ip><dhcp>...</dhcp></ip></network>`
+
+If not taking effect, recreate network:
+
+* `virsh  net-destroy <network-name>`
+* `virsh  net-start <network-name>`
+
 == virsh
 
 * `domblklist domain_name` - info about VM block devices
