@@ -1,0 +1,6 @@
+= Stress tools
+
+== Stress
+
+* `dnf -y install stress`
+* `stress --vm 1 --vm-bytes 128M` - allocates 128 MB per VM worker
