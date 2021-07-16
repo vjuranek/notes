@@ -1,3 +1,11 @@
 = Device mapper
 
+* `dmsetup info  /dev/mapper/36001405cd5268d7e3b64b40a16200729` - info about the device, `Open count` is number of processes using the device
 * `dmsetup remove -f /dev/mapper/<name>` - force remove device mapper link
+
+
+== Remove device then used by stale process
+
+* `dmsetup suspend /dev/mapper/36001405cd5268d7e3b64b40a16200729`
+* `dmsetup clear /dev/mapper/36001405cd5268d7e3b64b40a16200729`
+* `dmsetup wipe_table /dev/mapper/36001405cd5268d7e3b64b40a16200729`
