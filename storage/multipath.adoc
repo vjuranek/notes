@@ -8,3 +8,10 @@
 * `mpathpersist --out --reserve --param-rk=<KEY> --prout-type=5 /dev/mapper/mpath` - create reservation (see iscsi.adoc for prout types)
 * `mpathpersist --out --release --param-rk=<KEY> --prout-type=5 /dev/mapper/mpath` - release reservation
 * `mpathpersist --out --register --param-rk=<KEY> /dev/mapper/mpath` - unregister key
+
+== Removing path
+
+* `multipathd -k`
+* `show map 36001405cd5268d7e3b64b40a16200729 topology`
+* `show paths`
+* `remove path sdb`
