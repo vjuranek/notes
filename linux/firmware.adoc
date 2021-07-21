@@ -1,0 +1,4 @@
+= Firmware
+
+* `fwupdmgr` - firmaware update manager
+* `fwupdmgr update` - update firmware
