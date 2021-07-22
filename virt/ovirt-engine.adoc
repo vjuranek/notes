@@ -1,0 +1,3 @@
+= oVirt engine
+
+* `ovirt-aaa-jdbc-tool user password-reset admin --password-valid-to="2031-07-01 12:00:00Z"` - change password for `admin@internal`
