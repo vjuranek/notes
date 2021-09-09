@@ -1,0 +1,3 @@
+= psql
+
+* `\x` - expanded table formatting mode (for big tables)
