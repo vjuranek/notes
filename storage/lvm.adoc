@@ -20,6 +20,12 @@ resize2fs /dev/fedora_localhost-live/root
 ----
 
 
+== Metadata
+
+* `pvck --dump` - dump PV metadat
+* `pvck --repair` - repair PV metadata
+
+
 == Misc
 
 * `file -s <device>` - checks, if the device is LVM device (output should be something like `<device>: LVM2 PV (Linux Logical Volume Manager) ...`)
