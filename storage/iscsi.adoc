@@ -30,11 +30,21 @@
 * `targetcli /backstores/fileio/ ls`
 
 
+== Portals
+
+* `targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/portals delete 0.0.0.0 3260` - remove default portal
+* `targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/portals create 192.168.122.254 && targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/portals create 192.168.122.115` - create two new portals bind to different NICs
+
 == Remove
 
 === Remove LUNs
 
 * `targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/luns delete <LUN_NUMBER>`
+
+== Backup
+
+* `/etc/target/backup` - stores old config files (by default last 10)
+* copy backup config from `/etc/target/backup` to `/etc/target/saveconfig.json` and `systemctl restart target`
 
 === Issues
 
