@@ -5,3 +5,8 @@
 * `/proc/devices` - list of major numbers and names of the char and block devices configured
 
 * https://github.com/torvalds/linux/blob/master/include/uapi/linux/major.h - major numbers defnied by linux kernel
+
+
+== udev
+
+* ` /lib/udev/scsi_id --whitelisted --replace-whitespace /dev/sda` - device ID
