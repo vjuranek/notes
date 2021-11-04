@@ -16,6 +16,9 @@ To edit more/older commits:
 
 * `git describe <commit>` - find most recent tag that is reachable from this commit (i.e. in which tag this commit is contained)
 
+* `git add -i` - interactive staging (see https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)
+* `git add -p` - interactive patch staging (staging parts of file), also very useful to use `git gui` which has better granularity
+
 === Rebase
 
 * `git rebase -i --root` - rebase to the first commit
