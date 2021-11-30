@@ -46,6 +46,29 @@
 * `/etc/target/backup` - stores old config files (by default last 10)
 * copy backup config from `/etc/target/backup` to `/etc/target/saveconfig.json` and `systemctl restart target`
 
+== iSER
+
+=== target
+
+(not working yet)
+
+* `targetcli /iscsi/ create iqn.2016-01.com.ovirt:444`
+* `targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/ set attribute authentication=0 demo_mode_write_protect=0 generate_node_acls=1 cache_dynamic_acls=1`
+* `targetcli backstores/ramdisk/ create name=test1 nullio=true size=10G`
+* `targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/luns create /backstores/ramdisk/test1`
+* `targetcli /iscsi/iqn.2016-01.com.ovirt:444/tpg1/portals/0.0.0.0:3260 enable_iser boolean=true`
+* `targetcli /`
+* `targetcli saveconfig`
+* `systemctl enable target --now`
+
+=== initiator
+
+* `modprobe ib_iser`
+* `lsmod | grep iser`
+* `iscsiadm --mode discoverydb --type sendtargets --portal 192.168.122.202 --discover`
+* `iscsiadm -m node -T iqn.2016-01.com.ovirt:444 -o update -n iface.transport_name -v iser`
+* `iscsiadm --mode node --targetname iqn.2016-01.com.ovirt:444 --portal 192.168.122.202 -l`
+
 === Issues
 
 ==== qemu-img got stuck
