@@ -1,0 +1,31 @@
+= OpenShift
+
+== Pods
+
+* `oc rsh $POD_NAME` - ssh to pod
+
+* empty Fedora container:
+
+[source, yaml]
+----
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-fc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-fc
+  template:
+    metadata:
+      labels:
+        app: hello-fc
+    spec:
+      containers:
+      - name: hello-fc
+        image: quay.io/fedora/fedora:latest
+        command: [ "/bin/bash", "-c", "--" ]
+        args: [ "while true; echo \"`date`: sleeping\"; do sleep 30; done;" ]
+----
+
