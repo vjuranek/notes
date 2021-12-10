@@ -39,6 +39,7 @@ Deprecated, ReplicaSet should be used instead.
 == Deployments
 
 * `kubectl expose deployment $DEPLOY_NAME --type=LoadBalancer`
+* `kubectl scale --replicas=5 deployment $DEPLOYMENT_NAME`
 
 == Config
 
