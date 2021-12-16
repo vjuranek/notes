@@ -29,3 +29,10 @@ spec:
         args: [ "while true; echo \"`date`: sleeping\"; do sleep 30; done;" ]
 ----
 
+== Nodes
+
+* `oc get nodes`
+* `oc adm node-logs -l kubernetes.io/hostname=$NODE_NAME`
+* `oc adm node-logs -l kubernetes.io/hostname=$NODE_NAME --tail=100` - last 100 lines from log
+* `oc adm node-logs -l kubernetes.io/hostname=$NODE_NAME --path=/` - list available logs in `/var/log/` on given node
+* `oc adm node-logs -l kubernetes.io/hostname=$NODE_NAME --path=/path/to/log` - show log, `path` is relative to `/var/log/`
