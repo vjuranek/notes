@@ -29,6 +29,10 @@ spec:
         args: [ "while true; echo \"`date`: sleeping\"; do sleep 30; done;" ]
 ----
 
+== Deployment
+
+`oc delete deployment -l $LABEL=$VALUE`
+
 == Nodes
 
 * `oc get nodes`
