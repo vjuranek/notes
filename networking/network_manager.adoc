@@ -2,4 +2,11 @@
 
 == nmcli
 
+=== Add new connection
+
+* `nmcli connection reload`
+* `nmcli connection up enp8s0`
+
+=== VPN
+
 * `nmcli connection import type openvpn file my_vpn.ovpn` - add VPN using ovpn file
