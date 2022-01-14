@@ -19,6 +19,8 @@
 * `kubectl create -f app.yaml`
 * `kubectl delete pod $POD_NAME`
 
+* `kubectl get pods $POD_NAME -o jsonpath='{.spec.containers[*].name}'` - list containers in the pod
+
 * `kubectl exec $CONTAINER_NAME -- $CMD` - execute command in container (`--` can be skipped if command doesn't contain options with dashes)
 * `kubectl exec -it $CONTAINER_NAME bash` - runs interactive bash in the container
 
