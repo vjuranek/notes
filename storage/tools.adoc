@@ -4,6 +4,8 @@
 
 * `kpartx -d /dev/mapper/device` - delete partition mappings from device
 
+* `udevadm info -q all -n <dev> | grep ID_SERIAL`
+
 == SMART
 
 * `dnf install smartmontools`
