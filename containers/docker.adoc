@@ -4,3 +4,8 @@
 
 * `docker rm `docker ps -a -q`` - remove all containers
 * `docker inspect -f {{.NetworkSettings.Networks.docker_default.IPAddress}} $CONTAINER_ID` - shows IP address of the container
+
+== Network
+
+* `docker network ls` - list docker networks
+* `docker run -it --rm --name mycontainer --link $CONTAINER_NAME --net $NETWOTK_NAME ...` - links to conatiner in given network
