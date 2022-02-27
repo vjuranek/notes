@@ -11,3 +11,7 @@
 * `-XX:ResizeTLAB` - allows JVM to resize TLAB size dynamically (turn on by default).
 * `-XX:TLABWasteTargetPercent=N` - threshold for allocating object outside TLAB, so called slow allocation (for objects under this limit which doesn't fit into existing TLAB, new TLAB is created, unused rest of the old TLAB is waste). Default is 1 (1% of TLAB size).
 * `-XX:TLABWasteIncrement=N` - how much is `TLABWasteTargetPercent` automatically incremented after each slow allocation. The default is 4 (4%).
+
+== Security
+
+* in case of e.g. `javax.net.ssl.SSLHandshakeException: No appropriate protocol (protocol is disabled or cipher suites are inappropriate)` can be workaround by commeting out `jdk.tls.disabledAlgorithms` in ``java.security` file (`/usr/java/latest/conf/security/java.security`)
