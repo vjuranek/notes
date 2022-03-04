@@ -78,6 +78,28 @@ Deprecated, ReplicaSet should be used instead.
 * `minikube addons list` -list minikube addons
 * `minikube addons enable ingress` - enables ingress on minikube
 
+=== Internal registry
+
+* `minikube start --insecure-registry "10.0.0.0/24"` - enable insecure registry during start, needs to remove old VM if previously started without it , see https://minikube.sigs.k8s.io/docs/handbook/registry/#enabling-insecure-registries[minikube documentation] for more details
+* `minikube addons enable registry`
+* `kubectl -n kube-system get svc registry -o jsonpath='{.spec.clusterIP}'` - IP of the internal registry
+
+==== Pushing from localhost to minikube internal registry
+
+Enable insecure docker registry for minikube VM (`192.168.39.160` is IP of minikube VM):
+
+[source,bash]
+----
+$ cat /etc/docker/daemon.json 
+{
+  "insecure-registries" : ["192.168.39.160:5000"]
+}
+----
+
+* `docker build --tag $(minikube ip):5000/my-image .`
+* `docker push $(minikube ip):5000/my-image:latest`
+
+
 === References
 * https://medium.com/google-cloud/understanding-kubernetes-networking-pods-7117dd28727
 * https://medium.com/google-cloud/understanding-kubernetes-networking-services-f0cb48e4cc82
