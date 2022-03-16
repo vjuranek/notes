@@ -1,0 +1,3 @@
+= Idea
+
+* Set `idea.max.intellisense.filesize=3500` in  the custom `idea.properties` (`Help` -> `Edit Custom Properties`) to change the limits when the source contains too big file and therefore file is ignored by coding assistenace and similar tools
