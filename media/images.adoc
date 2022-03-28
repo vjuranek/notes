@@ -1,0 +1,5 @@
+= Images
+
+== Resize
+
+* `convert -resize 33% image.jpg small_image.jpg` - `convert` is part of `ImageMagick` package on FC
