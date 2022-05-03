@@ -4,6 +4,7 @@
 
 * `git commit --amend --author="name <email>"` - change commit author of the last commit
 * `git commit --amend --date="2021-04-06 09:00:00"` - change commit date
+* `git commit --amend --date=now --no-edit` - amend commit date to current time
 
 To edit more/older commits:
 
