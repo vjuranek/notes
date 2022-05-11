@@ -10,3 +10,24 @@
 
 * `docker network ls` - list docker networks
 * `docker run -it --rm --name mycontainer --link $CONTAINER_NAME --net $NETWOTK_NAME ...` - links to conatiner in given network
+
+== Isseus
+
+=== OOM
+
+Failure:
+
+```
+===> Launching kafka ... 
+library initialization failed - unable to allocate file descriptor table - out of memorylibrary initialization failed - unable to allocate file descriptor table - out of memoryAborted (core dumped)
+```
+
+Fix:
+
+* add `--default-ulimit nofile=65536:65536` to `ExecStart` command into `docker.service` file:
+
+```
+ExecStart=/usr/bin/dockerd --default-ulimit nofile=65536:65536 -H fd:// --containerd=/run/containerd/containerd.sock
+```
+
+follewed by `systemctl daemon-reload` and `systemctl restart docker`
