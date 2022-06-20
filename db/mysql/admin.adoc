@@ -1,0 +1,3 @@
+[MySQL useful admin commands]
+
+* `SELECT * FROM INFORMATION_SCHEMA.PROCESSLIST;` - shows queries and connections
