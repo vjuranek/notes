@@ -1,0 +1,5 @@
+= MySQL JDBC
+
+== TLS
+
+* `jdbc:mysql://<host>:<port>/<dbname>?enabledTLSProtocols=TLSv1.2` - enable TLSv1.2, see also https://stackoverflow.com/questions/67332909/why-can-java-not-connect-to-mysql-5-7-after-the-latest-jdk-update-and-how-should[here], it is JDBC driver dependent
