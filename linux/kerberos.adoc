@@ -1,0 +1,5 @@
+= Kerberos
+
+== Troubleshooting
+
+* `KRB5_TRACE=/dev/stdout kinit` - enables trace logging to std out for `kinit`
