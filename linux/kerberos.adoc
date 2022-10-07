@@ -3,3 +3,4 @@
 == Troubleshooting
 
 * `KRB5_TRACE=/dev/stdout kinit` - enables trace logging to std out for `kinit`
+* `env SSSD_KRB5_LOCATOR_DEBUG=true env KRB5_TRACE=/dev/stdout kinit`
