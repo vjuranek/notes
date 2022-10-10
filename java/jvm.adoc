@@ -1,5 +1,9 @@
 = JVM
 
+== Java major version numbers
+
+* https://stackoverflow.com/questions/9170832/list-of-java-class-file-format-major-version-numbers
+
 == JVM flags
 
 === TLAB
