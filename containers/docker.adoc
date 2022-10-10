@@ -16,6 +16,8 @@
 * `docker volume prune` - removed unsed volumes
 * `docker image prune -a --force --filter "until=2022-08-01T00:00:00"` - prune images older than specified date
 
+* see also https://docs.docker.com/config/pruning/
+
 == Resources
 
 * `docker run --cpus=".5"` - how many CPUs container can use, in this case max 0.5 CPU
