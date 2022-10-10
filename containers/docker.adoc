@@ -11,8 +11,9 @@
 * `docker network ls` - list docker networks
 * `docker run -it --rm --name mycontainer --link $CONTAINER_NAME --net $NETWOTK_NAME ...` - links to conatiner in given network
 
-== Images
+== Cleanup
 
+* `docker volume prune` - removed unsed volumes
 * `docker image prune -a --force --filter "until=2022-08-01T00:00:00"` - prune images older than specified date
 
 == Resources
