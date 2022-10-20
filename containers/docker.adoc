@@ -10,6 +10,7 @@
 
 * `docker network ls` - list docker networks
 * `docker run -it --rm --name mycontainer --link $CONTAINER_NAME --net $NETWOTK_NAME ...` - links to conatiner in given network
+* `--net=host` - add to docker command to expose ports available on the local host machine
 
 == Cleanup
 
