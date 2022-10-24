@@ -1,3 +1,9 @@
 = Newtworking
 
 * `hostname -I` - shows IP address  of the machine (useful when `ip` in to installed)
+
+== Resolving
+
+* `systemctl status systemd-resolved`
+* `systemd-resolve --status`
+* `journalctl -r -u systemd-resolved.service`
