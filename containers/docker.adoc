@@ -23,6 +23,14 @@
 
 * `docker run --cpus=".5"` - how many CPUs container can use, in this case max 0.5 CPU
 
+== X11
+
+=== Jepsen
+* `xhost +` or `xhost +"local:docker@"`
+* add to docker command `-e DISPLAY=$DISPLAY` (into `bin/console`)
+* `apt install openjdk-17-jdk xvfb`
+* `xvfb-run lein run`
+
 == Isseus
 
 === OOM
