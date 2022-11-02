@@ -26,6 +26,11 @@ To edit more/older commits:
 
 * `git rebase -i --root` - rebase to the first commit
 
+== Tags
+
+* `git tag -d tag_name` - delete `tag_name` locally
+* `git push --delete upstream tag_name` - delete `tag_name` in remote `upstream` repo
+
 == Git log
 
 * `git log a..b` - git log in range from commit hash `a` to `b`
