@@ -17,6 +17,8 @@ To edit more/older commits:
 
 * `git describe <commit>` - find most recent tag that is reachable from this commit (i.e. in which tag this commit is contained)
 
+* `git reflog` - log of operations with commit refferences
+
 === Staging
 
 * `git add -i` - interactive staging (see https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)
