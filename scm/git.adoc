@@ -52,3 +52,8 @@ To edit more/older commits:
 ** to change subject (e.g. to include patch version), use `--subject-prefix="PATCH vX"`
 ** to include cover latter, add `--cover-letter` and edit appropriate patch `0000-cover-letter.patch`, replacing all `***` (subject and body)
 * `git send-email --smtp-server=smtp.server.addr *.patch` - sends the patches
+
+== Worktree
+
+* `git worktree list` - list work trees
+* `git worktree move WORK_TREE_NAME PATH` - move worktree named `WORK_TREE_NAME` to dir `PATH`
