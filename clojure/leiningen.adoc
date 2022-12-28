@@ -13,3 +13,7 @@
 == Project
 
 * Create new project based on `app` template: `lein new app projectName`
+
+== Tests
+
+* `lein test :only namespace/test` - run single test
