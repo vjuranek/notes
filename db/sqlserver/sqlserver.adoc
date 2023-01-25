@@ -1,0 +1,5 @@
+= SQL Server
+
+== Config
+
+* `/opt/mssql/bin/mssql-conf list` - list config options (need to run under root, in docker login exec in the container with `-u 0` option)
