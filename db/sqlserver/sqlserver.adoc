@@ -3,3 +3,8 @@
 == Config
 
 * `/opt/mssql/bin/mssql-conf list` - list config options (need to run under root, in docker login exec in the container with `-u 0` option)
+
+== CDC
+
+* `SELECT * FROM msdb.dbo.cdc_jobs;` - show CDC jobs and their params
+* `exec sys.sp_cdc_change_job @job_type = 'capture', @pollinginterval = 1;` - change polling interval to 1 second (default is 5)

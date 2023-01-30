@@ -57,3 +57,8 @@ To edit more/older commits:
 
 * `git worktree list` - list work trees
 * `git worktree move WORK_TREE_NAME PATH` - move worktree named `WORK_TREE_NAME` to dir `PATH`
+
+
+== GitHub
+
+* `git fetch upstream pull/<PR_NUMBER>/head:<LOCAL_BRANCH>` - pulls PR `#<PR_NUMER>` into local `<LOCAL_BRANCH>`
