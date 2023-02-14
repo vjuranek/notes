@@ -12,6 +12,10 @@
 * `xhost` - manage access for users for X server
 
 
+== Printing etc.
+
+* `pdfunite *.pdf out.pdf` - merge multiple pdf file into one `out.pdf`
+
 == Security
 
 * `srm` - secure delete
