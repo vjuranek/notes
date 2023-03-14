@@ -20,3 +20,7 @@ host    all             all             ::1/128                 trust
 * `sudo su - postgres`
 * `createuser -d perfrepo`
 * `createdb -U perfrepo -O perfrepo perfrepo`
+
+== Settings
+
+* `select name, setting from pg_settings;` - dump postrges settings
