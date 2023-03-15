@@ -1,0 +1,12 @@
+= WAL
+
+* WAL data stored in `$PG_DATA/pg_wal` (e.g. `/var/lib/postgresql/data/pg_wal`)
+
+* `SELECT pg_current_wal_lsn();` - curren LSN
+
+* `SELECT pg_walfile_name(pg_current_wal_lsn());` - current WAL file name
+* `SELECT pg_switch_wal( );` - manually switch WAL file
+
+== Utilities
+
+* `pg_waldump` - disaply content of WAL file
