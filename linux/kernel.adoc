@@ -1,0 +1,1 @@
+* `grubby --set-default-index=1` - change default kernel
