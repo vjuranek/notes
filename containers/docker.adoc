@@ -24,6 +24,10 @@
 
 * `docker run --cpus=".5"` - how many CPUs container can use, in this case max 0.5 CPU
 
+== Architectures
+
+* `docker buildx imagetools inspect <image>` - shows image details from the registry (all available architectures)
+
 == X11
 
 === Jepsen
