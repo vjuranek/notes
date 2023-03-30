@@ -1,0 +1,7 @@
+= Docker registry
+
+* `docker run -d -p 5000:5000 --restart=always --name registry registry:2` - run the resitry locally
+* `klausmeyer/docker-registry-browser:latest` - registry web app UI (needs to set `DOCKER_REGISTRY_URL=http://localhost:5000`)
+* `curl localhost:5500/v2/_catalog` - list repositories
+* `curl localhost:5500/v2/debezium/postgres/tags/list` - list the tags
+* `curl -H 'Accept: application/vnd.oci.image.index.v1+json' localhost:5500/v2/debezium/postgres/manifests/15` -get the manifest (other registry versions may require accept headers to be `Accept: application/vnd.docker.distribution.manifest.v2+json`)
