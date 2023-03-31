@@ -5,3 +5,9 @@
 * `curl localhost:5500/v2/_catalog` - list repositories
 * `curl localhost:5500/v2/debezium/postgres/tags/list` - list the tags
 * `curl -H 'Accept: application/vnd.oci.image.index.v1+json' localhost:5500/v2/debezium/postgres/manifests/15` -get the manifest (other registry versions may require accept headers to be `Accept: application/vnd.docker.distribution.manifest.v2+json`)
+
+== Docker Hub registry
+
+* `export TOKEN=$(curl -fsSL "https://auth.docker.io/token?service=registry.docker.io&scope=repository:debezium/postgres:pull" | jq --raw-output '.token')`
+* `curl -fsSL -H "Authorization: Bearer $TOKEN" "https://index.docker.io/v2/debezium/postgres/tags/list"`
+* `curl -fsSL -H "Authorization: Bearer $TOKEN" -H "Accept: application/vnd.oci.image.index.v1+json" "https://index.docker.io/v2/debezium/postgres/manifests/15"`
