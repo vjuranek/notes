@@ -1,0 +1,11 @@
+= TensorFlow IO
+
+== Data sets
+
+* `ds.element_spec` - sprecification of the tensor
+* `iterator = iter(ds)` - get iterator over data set
+* `iterator.get_next()` - get next element from data set
+
+== Tensors
+
+* `t.numpy()` - convert tensor to numpy array
