@@ -13,6 +13,10 @@
 * `docker run -it --rm --name mycontainer --link $CONTAINER_NAME --net $NETWOTK_NAME ...` - links to conatiner in given network
 * `--net=host` - add to docker command to expose ports available on the local host machine
 
+== Images
+
+* `docker inspect -f '{{.Config.Entrypoint}}' $IMG_ID` - show entrypoint of the image
+
 == Cleanup
 
 * `docker volume prune` - removed unsed volumes
