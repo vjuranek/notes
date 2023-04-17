@@ -20,6 +20,7 @@
 == Cleanup
 
 * `docker volume prune` - removed unsed volumes
+* `docker volume prune -f --filter all=true` - force delete of all volumes, workaround for a https://github.com/docker/cli/issues/4028[bug in Docker 23]
 * `docker image prune -a --force --filter "until=2022-08-01T00:00:00"` - prune images older than specified date
 
 * see also https://docs.docker.com/config/pruning/
