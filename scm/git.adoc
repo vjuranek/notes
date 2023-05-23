@@ -45,6 +45,10 @@ To edit more/older commits:
 * `git log -p --full-history -- "+**/file_name.*+"` - git log for a file which was already deleted
 * `git log -p --full-history -- <path-to-file>`
 
+== Git grep
+
+* `git grep $PATTERN -- ':(exclude)*/test/*'` - git grep for `$PATTERN`, but exclude all test directories
+
 == Git email
 
 * `dnf install git-email`
