@@ -1,0 +1,5 @@
+= Kafka Connect
+
+* `curl -i -X POST -H "Accept:application/json" -H  "Content-Type:application/json" http://localhost:8083/connectors/ -d @connector_confg` - create connector
+* `curl -i http://localhost:8083/connectors/CONNECTOR_NAME/status` - connector status
+* `curl -i -X DELETE http://localhost:8083/connectors/CONNECTO_NAME` - delete connector
