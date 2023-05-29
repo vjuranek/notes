@@ -2,4 +2,5 @@
 
 * `./bin/kafka-topics.sh --bootstrap-server=localhost:9092 --list` - list topics
 * `./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --from-beginning --property print.key=true --topic $TOPIC_NAME` - read from topic
+* `./bin/kafka-topics.sh --bootstrap-server=localhost:9092 --describe --topic $TOPIC_NAME` - describe topic
 * `./bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic $TOPIC_NAME` - delete topic
