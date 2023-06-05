@@ -10,3 +10,7 @@
 * `SELECT pg_terminate_backend($PID);` - teminates process with pid `PID`
 
 See Postgres https://www.postgresql.org/docs/current/monitoring-stats.html[The Cumulative Statistics System]
+
+== Replication slots
+
+* `select * from pg_replication_slots;` - list replication slots
