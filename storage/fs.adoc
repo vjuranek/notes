@@ -1,0 +1,5 @@
+= File system
+
+== tmpfs
+
+* `mount -t tmpfs -o size=4G tmpfs /tmp/tmpfs`
