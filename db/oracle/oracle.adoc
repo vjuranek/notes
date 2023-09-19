@@ -7,3 +7,4 @@
 == Alert log
 
 * `$ORACLE_DIR/diag/rdbms/$DB_NAME/$SID/trace` - location of alert logs
+* `select value from GV$DIAG_INFO WHERE name='Diag Trace';` - shows location of alert logs
