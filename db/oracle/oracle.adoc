@@ -3,3 +3,7 @@
 == Basic commands
 
 * `SELECT table_name FROM user_tables ORDER BY table_name;` - list tables
+
+== Alert log
+
+* `$ORACLE_DIR/diag/rdbms/$DB_NAME/$SID/trace` - location of alert logs
