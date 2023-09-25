@@ -5,7 +5,27 @@
 * `SELECT table_name FROM user_tables ORDER BY table_name;` - list tables
 * `SELECT table_name FROM all_tables ORDER BY table_name;` - list all tables
 
+* `select name from V$DATAFILE;` - list database files
+
 == Alert log
 
-* `$ORACLE_DIR/diag/rdbms/$DB_NAME/$SID/trace` - location of alert logs
+* `$ORACLE_DIR/diag/rdbms/$DB_NAME/$SID/trace` - location of alert logs (e.g. `/opt/oracle/diag/rdbms/orclcdb/ORCLCDB/trace/`)
 * `select value from GV$DIAG_INFO WHERE name='Diag Trace';` - shows location of alert logs
+* `archive log list;`
+
+* `alter session set container=cdb$root;`
+* `alter system switch logfile;`
+
+== Redo logs
+
+* `select MEMBER from v$logfile;` - list redo log files
+
+== PDB
+
+* `alter session set container=cdb$root;`
+* `select name from v$pdbs;`
+
+== LogMiner
+
+* `desc v$logmnr_contents;`
+
