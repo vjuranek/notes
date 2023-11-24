@@ -3,6 +3,7 @@
 == Basic
 
 * `lvs --config 'devices {filter=["a|.*|"]}'` - all devices, no filtering
+* `lvchange -a y my_vg/my_lv` - activate LV
 
 == Extending disk
 
