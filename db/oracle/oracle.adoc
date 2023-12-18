@@ -7,6 +7,11 @@
 
 * `select name from V$DATAFILE;` - list database files
 
+== Connections and sessions
+
+* `SELECT name, value FROM v$parameter WHERE name = 'sessions';` - maximum allowed sessions
+* `SELECT count(*) FROM V$SESSION;` - number of current active sessions
+
 == Alert log
 
 * `$ORACLE_DIR/diag/rdbms/$DB_NAME/$SID/trace` - location of alert logs (e.g. `/opt/oracle/diag/rdbms/orclcdb/ORCLCDB/trace/`)
