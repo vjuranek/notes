@@ -10,6 +10,7 @@
 == Connections, sessions, processes
 
 * `SELECT name, value FROM v$parameter WHERE name = 'sessions';` - maximum allowed sessions
+* `show parameter sessions;` - same as above (shows all `*sessions*` parameters)
 * `SELECT count(*) FROM V$SESSION;` - number of current active sessions
 
 * `show parameter process;` - `processes` shows the configured limit for the number of processes
