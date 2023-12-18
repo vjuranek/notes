@@ -7,10 +7,13 @@
 
 * `select name from V$DATAFILE;` - list database files
 
-== Connections and sessions
+== Connections, sessions, processes
 
 * `SELECT name, value FROM v$parameter WHERE name = 'sessions';` - maximum allowed sessions
 * `SELECT count(*) FROM V$SESSION;` - number of current active sessions
+
+* `show parameter process;` - `processes` shows the configured limit for the number of processes
+* `select count(*) from V$PROCESS;` - number or running processes
 
 == Alert log
 
