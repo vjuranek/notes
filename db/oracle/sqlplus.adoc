@@ -1,1 +1,1 @@
-* `col member format a50`
+* `col member format a50` - sets output width of column `member` to 50 chars
