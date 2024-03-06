@@ -1,0 +1,14 @@
+= RMAN
+
+== Connection
+
+* `rman TARGET  sys/top_secret@localhost/ORCLPDB1` - connect to DBZ tutorial pdb
+* `rman TARGET  sys/top_secret@localhost/ORCLCDB` - connect to root DB
+
+== Config
+
+* `show all;` - show all the configuration
+
+== Archive logs
+
+* `list expired archivelog all;`
