@@ -9,6 +9,19 @@
 
 * `show all;` - show all the configuration
 
+== Backup
+
+* `list backupset;`
+* `backup tablespace users;`
+
 == Archive logs
 
+* `show retention policy;`
+* `configure retention policy to recovery window of 1 days;`
+* `configure retention policy to none;` - retention policy disabled
+* `CONFIGURE RETENTION POLICY CLEAR;` - set retention policy to default
+
 * `list expired archivelog all;`
+* `delete expired archivelog all;`
+
+* `delete archivelog all;`
