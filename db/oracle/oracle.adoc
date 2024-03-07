@@ -20,16 +20,41 @@
 
 * `$ORACLE_DIR/diag/rdbms/$DB_NAME/$SID/trace` - location of alert logs (e.g. `/opt/oracle/diag/rdbms/orclcdb/ORCLCDB/trace/`)
 * `select value from GV$DIAG_INFO WHERE name='Diag Trace';` - shows location of alert logs
+
+* `archive log list;`
+* `show parameter db_recovery_file_dest`
+* `select dest_name, status, destination from v$archive_dest;
+
+=== Disabling ARCHIVELOG mode
+
+* `shutdown`
+* `export ORACLE_SID=ORCLCDB`
+* `sqlplus sys as sysdba`
+* (hit enter when asked for password)
+* `startup mount`
+* `alter database noarchivelog;`
+* `alter database open;`
 * `archive log list;`
 
-* `alter session set container=cdb$root;`
-* `alter system switch logfile;`
+or
+
+* `ALTER SYSTEM SET log_archive_start=false SCOPE=spfile;`
+* `SHUTDOWN IMMEDIATE`
+* log again as in the above
+* `STARTUP`
+* `archive log list;`
 
 == Redo logs
 
 * `select GROUP#,TYPE,MEMBER from v$logfile;` - list redo log files
 * `select GROUP#,THREAD#,bytes,MEMBERS,STATUS from v$log;` - list other redo log file details, especially status
 * `alter system switch logfile;` - switch the redo log file
+
+* `alter system checkpoint;`
+* `ALTER DATABASE CLEAR LOGFILE GROUP 1;`
+* `ALTER DATABASE DROP LOGFILE GROUP 1;`
+* `ALTER DATABASE ADD LOGFILE GROUP 1 ('/opt/oracle/oradata/ORCLCDB/redo01.log') size 400M REUSE;`
+
 
 == PDB
 
@@ -40,4 +65,5 @@
 == LogMiner
 
 * `desc v$logmnr_contents;`
-
+* `BEGIN SYS.DBMS_LOGMNR.START_LOGMNR( STARTSCN =>dbms_flashback.get_system_change_number, OPTIONS =>SYS.DBMS_LOGMNR.DICT_FROM_REDO_LOGS); END;` - start logminer
+* `SELECT SCN FROM V$LOGMNR_CONTENTS`
