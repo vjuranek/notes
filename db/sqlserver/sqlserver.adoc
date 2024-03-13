@@ -16,3 +16,16 @@
 * `SELECT Name FROM sys.databases;` - list databases
 * `use testDB1;` - switch DB
 * `SELECT * FROM INFORMATION_SCHEMA.TABLES;` - list all tables
+
+== Locks
+
+* `SELECT * FROM sys.dm_tran_locks WHERE request_session_id = @@SPID;`
+* `SELECT resource_type,request_mode,request_status FROM sys.dm_tran_locks WHERE request_session_id = @@SPID;`
+
+```
+1> begin transaction
+2> insert into tablea values (1, 'aaa');
+3> SELECT resource_type,request_mode,request_status FROM sys.dm_tran_locks WHERE request_session_id = @@SPID;
+4> commit
+5> go
+```
