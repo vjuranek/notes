@@ -8,3 +8,11 @@
 
 * `SELECT * FROM msdb.dbo.cdc_jobs;` - show CDC jobs and their params
 * `exec sys.sp_cdc_change_job @job_type = 'capture', @pollinginterval = 1;` - change polling interval to 1 second (default is 5)
+
+== Common
+
+* all commands are triggered by separate `go` command
+
+* `SELECT Name FROM sys.databases;` - list databases
+* `use testDB1;` - switch DB
+* `SELECT * FROM INFORMATION_SCHEMA.TABLES;` - list all tables
