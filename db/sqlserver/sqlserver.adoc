@@ -32,4 +32,5 @@
 
 == Transactions
 
-* `SELECT transaction_isolation_level FROM sys.dm_exec_sessions WHERE session_id = @@SPID;` - shows current isolation levels (list of constants is https://learn.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-exec-sessions-transact-sql[sys.dm_exec_sessions])
+* `SELECT transaction_isolation_level FROM sys.dm_exec_sessions WHERE session_id = @@SPID;` - show current isolation levels (list of constants is https://learn.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-exec-sessions-transact-sql[sys.dm_exec_sessions])
+* `SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;` - change isolation level
