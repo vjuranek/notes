@@ -1,5 +1,7 @@
 = Oracle error and troubleshooting
 
+* `oerr ora XYZ` - utility to extract error and provides suggestion how to fix the issue
+
 == PDB related errors
 
 * `ORA-65040: operation not allowed from within a pluggable database` - the session has to be switched to CDB root database (`ORA-65040: operation not allowed from within a pluggable database`)
