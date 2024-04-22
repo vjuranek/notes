@@ -11,6 +11,18 @@ Command-line tool for examining and modifying virtual machine filesystems, see h
 * `virt-sparsify`
 * `virt-customize`
 
+== Editing disk
+
+* `guestfish --rw -a ./CentOS-Stream.qcow2`
+* `run`
+* `list-filesystems`
+
+    /dev/sda1: xfs
+
+* `mount /dev/sda1 /`
+* `vi /etc/shadow` - change root password
+* `quit`
+
 = virt-install
 
 * `virt-install --name fc34-test --memory 2048 --vcpus 1 --disk /home/vjuranek/images/test.img,bus=sata --import --os-variant fedora34 --network default`
