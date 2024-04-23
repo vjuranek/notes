@@ -6,6 +6,7 @@
 * `dmidecode -s system-serial-number` - shows computer serial number
 * `hdparm` - get/set SATA/IDE device parameters
 * `smartctl -a /dev/sda` - SMART disk info
+* `sensors` - show information from sensors, `watch sensors` to update get  updates over some period
 
 == Video, X server etc.
 
