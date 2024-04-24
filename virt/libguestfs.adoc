@@ -20,7 +20,7 @@ Command-line tool for examining and modifying virtual machine filesystems, see h
     /dev/sda1: xfs
 
 * `mount /dev/sda1 /`
-* `vi /etc/shadow` - change root password
+* `vi /etc/shadow` - change root password (use e.g. `openssl passwd -6 passwd` or `mkpasswd` to generate the hash)
 * `quit`
 
 = virt-install
