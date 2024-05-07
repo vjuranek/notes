@@ -1,0 +1,8 @@
+= Feast feature store
+
+== Installation
+
+* `dnf install python3.10`
+* `python3.10 -m venv .venv`
+* `source .venv/bin/activate`
+* `pip install feast`
