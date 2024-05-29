@@ -17,6 +17,11 @@
 * `use testDB1;` - switch DB
 * `SELECT * FROM INFORMATION_SCHEMA.TABLES;` - list all tables
 
+== Info
+
+* `select @@version;` - shows DB version
+* `select db_name();` - DB name
+
 == Indexes
 
 * `SELECT name FROM sys.indexes WHERE object_id = (SELECT object_id FROM sys.objects WHERE name = 'table_name');` - show names of indexes on table `table_name`
@@ -46,3 +51,9 @@
 
 * `SELECT [Transaction ID],[Transaction Name], [Operation], [Context], [Transaction SID] FROM fn_dblog (null,null) where [Transaction Name]='INSERT';` - select `insert` operations from server log
 * `SELECT SUSER_SNAME(0x01);` - shows username for given SID (`[Transaction SID]` from previous command)
+
+
+== Help
+
+* `exec sp_help` - list all the objects in the database
+* `sp_help $object` - list information about given object (e.g. `'sys.fn_dblog'`)
