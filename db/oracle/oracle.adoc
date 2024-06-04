@@ -4,6 +4,7 @@
 
 * `SELECT table_name FROM user_tables ORDER BY table_name;` - list tables
 * `SELECT table_name FROM all_tables ORDER BY table_name;` - list all tables
+* `SELECT dbms_metadata.get_ddl('TABLE', '<table_name>') FROM dual;` - get DDL statement for table `table_name`
 
 * `select name from V$DATAFILE;` - list database files
 
