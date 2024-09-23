@@ -6,6 +6,7 @@
 * `SELECT table_name FROM all_tables ORDER BY table_name;` - list all tables
 * `SELECT dbms_metadata.get_ddl('TABLE', '<table_name>') FROM dual;` - get DDL statement for table `table_name`
 
+* `SELECT NAME FROM v$database;` - list databases
 * `select name from V$DATAFILE;` - list database files
 
 == Connections, sessions, processes
