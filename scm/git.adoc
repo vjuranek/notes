@@ -63,6 +63,11 @@ To edit more/older commits:
 * `git worktree move WORK_TREE_NAME PATH` - move worktree named `WORK_TREE_NAME` to dir `PATH`
 
 
+== Git crypt
+
+* `git crypt status -e` - list encrypted files
+* `git crypt unlock` - unlock encrypted files
+
 == GitHub
 
 * `git fetch upstream pull/<PR_NUMBER>/head:<LOCAL_BRANCH>` - pulls PR `#<PR_NUMER>` into local `<LOCAL_BRANCH>`
