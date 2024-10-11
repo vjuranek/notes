@@ -1,5 +1,11 @@
-= Alsa
+== Linux audio
 
-== Alsa mixer
+== Alsa
+
+=== Alsa mixer
 * `alsamixer`
 * `sudo alsactl store`
+
+== Troubleshooting
+
+* if audio in external monitos via HDMI stops working, just kill `pipewire-pulse`, it will restart automatically
