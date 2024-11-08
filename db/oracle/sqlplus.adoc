@@ -1,2 +1,5 @@
+* `sqlplus / as sysdba` - OS user has to be a member of `dba` group
+* `sqlplus sys/sys_passwd as sysdba` - connetiong usus `sys` password
+
 * `set linesize 400` - set line size
 * `col member format a50` - sets output width of column `member` to 50 chars
