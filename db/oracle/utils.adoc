@@ -1,0 +1,5 @@
+= Orcale utils
+
+== Network
+
+* `lsnrctl status` - listener status
