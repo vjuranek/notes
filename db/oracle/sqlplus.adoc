@@ -1,5 +1,25 @@
 * `sqlplus / as sysdba` - OS user has to be a member of `dba` group
 * `sqlplus sys/sys_passwd as sysdba` - connetiong usus `sys` password
 
+* `sqlplus user/passwd @my_script.sql` - executes `my_script.sql`
+
+* `show user` - shows current user
+* `list` - shows command buffer (can abbreviated as `l`)
+* `edit` - edit command buffer in external editor
+* `/` - runs command buffer (`r` or `run` has the same meaning)
+* `save my_cmds` - saves command buffer into `my_cmds.sql` file
+* `@my_script` or `start my_script.sql` - in sqlplus logged in, execute `my_script.sql` script
+* `host cmd` - runs external `cmd` shell command
+
+* `spool output.log` - start capturing commands outout into external `output.log` file
+* `spool off` - stops captruring the output
+
+* `set sqlprompt "_user'@'_connect_identifier'>'"` - change default prompt
+
 * `set linesize 400` - set line size
 * `col member format a50` - sets output width of column `member` to 50 chars
+
+== Paramters
+
+* `show parameter $param_name` - shows parmater `$param_name` or param starting with this name from spfile (similar to `select from V$PARAMETER where name='param_name'`, but this read param value from memory)
+* `desc V$PARAMETER`
