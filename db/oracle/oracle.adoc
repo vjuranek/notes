@@ -9,8 +9,13 @@
 * `SELECT NAME FROM v$database;` - list databases
 * `select name from V$DATAFILE;` - list database files
 
+* `DESC table_name` - shows structure of the table `table_name`
+
 == Connections, sessions, processes
 
+* `show parameter SPFILE` - shows currently used SPFILE for starting the DB
+
+* `V$FIXED_TABLE` - view containing info about all dynamic tables and views
 * `SELECT name, value FROM v$parameter WHERE name = 'sessions';` - maximum allowed sessions
 * `show parameter sessions;` - same as above (shows all `*sessions*` parameters)
 * `SELECT count(*) FROM V$SESSION;` - number of current active sessions
