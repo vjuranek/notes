@@ -1,0 +1,4 @@
+= SQL Developer
+
+* `ctrl-enter` - run current (focus) commad
+* `F5` - runs the whole pad as a script
