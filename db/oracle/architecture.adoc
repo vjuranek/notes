@@ -1,0 +1,48 @@
+= Oracle architecture notes
+
+== Multitenancy
+
+* online redo log files and achive files are always in `CDB` and to manage them, one has to log in into `CDB$ROOT`, not into PDB
+* `PDB$SEED` - temlate for PDBs for creating user PDBs
+
+=== Object names
+
+* `USER_*` - objects owned by the user
+* `ALL_*` - objects accessible by the current user
+* `DBA_*` - objects withing current container (being it CDB or PDB)
+* `CDB_*` - objects in the CDB
+* `V$*` - SGA accessed by the all containers
+
+* `CON_ID` - `0` for CDB, `1` for `CDB$ROOT`, `2` for `PDB$SEED`, `>2` for PDBs
+
+== Memory
+
+* `PGA` - program global area - areas dedicated to each client session, each connected client has its own server process and each server process has its own PGA
+  * SQL work area
+  * session memory
+* `SGA` - system global area
+  * shared pool - stores pl/sql code executed by connected users, data dictionary of accessed objects
+    * library cache
+    * data dictionary cache
+    * result cache
+    * UGA (user global area)
+  * DB bugger cache - data block requested by connected users
+    * disk writer (DBWn) writes data block to the data files
+  * redo log buffer - redo entries
+  * large pool - buffer for some operations (RMAN, UGA etc), shared pool is used if the large pool is not configured
+  * shared flashback buffer - use by flashback operations
+  * fixed SGA
+  * Java pool - for executing java code
+
+
+=== Log Writer (LGWR)
+
+* writes records from Redo log buffer to Online redo log file
+* the writing is triggered when
+  * user transaction is committed
+  * redo log buffer is 1/3 full
+  * before DB writer (DBWn) writes modified buffers to the disk
+  * every 3 seconds otherwise
+
+Online redo log files are typically in 3 groups.
+Once LGWR fill all the groups, it starts writing again into the first group.
