@@ -3,3 +3,9 @@
 * `ansible-doc -l` - list available plugins
 
 * `ansible-galaxy init my_role` - prepare dir sturcure for a new role
+
+
+== Vault
+
+* `ansible-vault decrypt my_file.yaml --vault-password-file password.txt` - decrypt vault file
+* `ansible-vault edit clouds.yaml --vault-password-file password.txt` - edit encrypted file without the need to decrypt it
