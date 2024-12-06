@@ -74,6 +74,12 @@ or
 * `alter session set container=cdb$root;` - switch to CDB root database
 * `select name from v$pdbs;`
 
+== Undo data
+
+* `V$UNDOSTAT` - statistics about undo tablespace
+* `select TABLESPACE_NAME from DBA_TABLESPACES where CONTENTS = 'UNDO';` - select names of undo tablespaces
+* `show parameter UNDO_RETENTION` - retention time of undo records
+
 == LogMiner
 
 * `desc v$logmnr_contents;`
