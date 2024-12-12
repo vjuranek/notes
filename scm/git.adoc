@@ -68,6 +68,10 @@ To edit more/older commits:
 * `git crypt status -e` - list encrypted files
 * `git crypt unlock` - unlock encrypted files
 
+== SSL
+
+* `git -c http.sslVerify=false clone https://repo.using.self.signed.cert` - clone repo and skip certificate check
+
 == GitHub
 
 * `git fetch upstream pull/<PR_NUMBER>/head:<LOCAL_BRANCH>` - pulls PR `#<PR_NUMER>` into local `<LOCAL_BRANCH>`
