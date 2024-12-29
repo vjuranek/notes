@@ -1,0 +1,10 @@
+= LangChain
+
+== Ollama
+
+[source, python]
+----
+from langchain_ollama import OllamaLLM
+llm = OllamaLLM(model="llama3.2")
+llm.invoke("tell me about partial functions in python")
+----
