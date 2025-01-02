@@ -19,6 +19,8 @@ To edit more/older commits:
 
 * `git reflog` - log of operations with commit refferences
 
+* `git cherry-pick -X theirs <commit-hash>` - cherry-pick the commit and applies `theirs` merge option strategy. Can be use to re-apply the commit.
+
 === Staging
 
 * `git add -i` - interactive staging (see https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging)
