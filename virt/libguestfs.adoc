@@ -26,3 +26,5 @@ Command-line tool for examining and modifying virtual machine filesystems, see h
 = virt-install
 
 * `virt-install --name fc34-test --memory 2048 --vcpus 1 --disk /home/vjuranek/images/test.img,bus=sata --import --os-variant fedora34 --network default`
+* `virt-install --osinfo list`
+* `virt-install --name centos10 --osinfo detect=on,name=centos-stream9 --memory 2048 --vcpus 2 --disk ~images/vm/centos10.img,size=20 --location ~/images/iso/CentOS-Stream-10-latest-x86_64-dvd1.iso`
