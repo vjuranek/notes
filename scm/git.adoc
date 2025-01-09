@@ -70,6 +70,17 @@ To edit more/older commits:
 * `git crypt status -e` - list encrypted files
 * `git crypt unlock` - unlock encrypted files
 
+=== Adding new collaborator
+
+* `gpg --armor --export DBD9D3A4D99067D0CE19663B1C013860708AA44E` - export public gpg key
+
+* `gpg --import DBD9D3A4D99067D0CE19663B1C013860708AA44E.gpg` - import user gpg public key
+* `gpg --list-keys` - list keys to check it's imported
+* `gpg --edit-key DBD9D3A4D99067D0CE19663B1C013860708AA44E`
+* `> trust` - change tru level fo the key to 5 (ultimate)
+* `> save` - save changes and list key again to see it the change were applied
+* `git-crypt add-gpg-user DBD9D3A4D99067D0CE19663B1C013860708AA44E`
+
 == SSL
 
 * `git -c http.sslVerify=false clone https://repo.using.self.signed.cert` - clone repo and skip certificate check
