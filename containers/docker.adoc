@@ -15,6 +15,7 @@
 
 == Images
 
+* `docker images --digests` - show digests of the images
 * `docker inspect -f '{{.Config.Entrypoint}}' $IMG_ID` - show entrypoint of the image
 
 == Cleanup
