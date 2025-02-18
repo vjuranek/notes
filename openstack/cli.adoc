@@ -1,0 +1,6 @@
+= OpenStack CLI
+
+Assumes `clouds.yaml` in current dir or in `~/.config/openstack` or in `/etc/openstack`.
+
+* `openstack --os-cloud $CLOUD_NAME server list` - list VMs
+* `openstack --os-cloud openstack floating ip show 1.2.3.4` - shows details about floating IP
