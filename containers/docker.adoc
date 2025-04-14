@@ -6,6 +6,7 @@
 * `docker exec -u 0 -it $CONATINER_NAME /bin/bash` - run shell under root account
 * `docker rm `docker ps -a -q`` - remove all containers
 * `docker inspect -f {{.NetworkSettings.Networks.docker_default.IPAddress}} $CONTAINER_ID` - shows IP address of the container
+* `docker cp $CONTAINER_NAME:/$PATH $LOCAL_PATH` - copy file from the container to the host
 
 == Network
 
