@@ -1,0 +1,9 @@
+= tc
+
+* `tc -s qdisc show dev eth0`
+* `tc qdisc add dev eth0 root netem delay 30s` - addes 30s delay into the `eth0` device (in container needs `--cap-add=net_admin`)
+* `tc qdisc del dev eth0 root` - remove the delay
+
+See also
+* https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/linux-traffic-control_configuring-and-managing-networking#linux-traffic-control_configuring-and-managing-networking
+* https://samwho.dev/blog/emulating-bad-networks/
