@@ -6,3 +6,5 @@
 * file can be alse remote file over ssh 
 
 * `Ctrl-a x` - terminates termina when using `-nographic`
+
+* `qemu-img create -f qcow2 ibm.qcow2 20G` - create qcow2 image
