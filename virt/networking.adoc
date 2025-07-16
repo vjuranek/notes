@@ -1,0 +1,8 @@
+= Networking
+
+== Troubleshoting
+
+=== VM is not able to connect to internet
+
+* Set `firewall_backend = "iptables"` in /etc/libvirt/network.conf
+* `systemctl restart virtnetworkd`
