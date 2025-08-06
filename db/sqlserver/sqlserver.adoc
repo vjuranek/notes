@@ -57,3 +57,8 @@
 
 * `exec sp_help` - list all the objects in the database
 * `sp_help $object` - list information about given object (e.g. `'sys.fn_dblog'`)
+
+== SQL Agent
+
+* `EXEC xp_servicecontrol N'Querystate|Start|Stop',N'Service Name'` - start/stop specified service
+* `EXEC xp_servicecontrol N'querystate',N'SQLServerAGENT';` - show status if SQL Agent
