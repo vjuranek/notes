@@ -8,3 +8,12 @@
 * `Ctrl-a x` - terminates termina when using `-nographic`
 
 * `qemu-img create -f qcow2 ibm.qcow2 20G` - create qcow2 image
+
+== Virtual disk rezise
+
+* Make sure you have no snapshots (delete them if there are any)
+* `qemu-img resize my_vm_disk.qcow2 +10G` on the host machine
+* start VM and inside VM
+* `dnf install cloud-utils-growpart` if `dnf install cloud-utils-growpart` is not installed
+* `growpart /dev/vda 1` assuming root partition is on `/dev/vda1`
+* `resize2fs /dev/vda1`
