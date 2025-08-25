@@ -1,0 +1,10 @@
+== sqlcmd
+
+== Settings
+
+`:setvar SQLCMDMAXVARTYPEWIDTH 30`
+`:setvar SQLCMDMAXFIXEDTYPEWIDTH 30`
+
+== Commands
+
+`!! <bash cmd>` - executes bash command
