@@ -7,6 +7,7 @@
 * `hdparm` - get/set SATA/IDE device parameters
 * `smartctl -a /dev/sda` - SMART disk info
 * `sensors` - show information from sensors, `watch sensors` to update get  updates over some period
+* `lsusb` - list USB devices
 
 == Video, X server etc.
 
