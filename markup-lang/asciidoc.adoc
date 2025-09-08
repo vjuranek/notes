@@ -1,3 +1,4 @@
 = Asciidoc
 
 * use `+` to escape formatting characters, e.g. `*strong*` vs. `+*not strong*+`
+* `options="nowrap"` - scrollable boxed listig, e.g. `[source, sql, options="nowrap"]`
