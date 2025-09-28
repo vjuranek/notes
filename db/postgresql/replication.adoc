@@ -1,0 +1,17 @@
+= Postgres replication
+
+==  Read replica via subsription
+
+* `docker run -it --rm --name master -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 quay.io/debezium/postgres:17-alpine` - important to have `{ echo "host replication $POSTGRES_USER 0.0.0.0/0 trust"; } >> "$PGDATA/pg_hba.conf"`
+* `docker run -it --rm --name slave -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -p 15432:5432 quay.io/debezium/postgres:17-alpine`
+
+=== Master setup
+
+* create db and table
+* `CREATE PUBLICATION test_pub FOR TABLE test;`
+* `GRANT ALL ON test TO postgres;`
+
+=== On slave
+
+* create db and table
+* `CREATE SUBSCRIPTION test_sub CONNECTION 'dbname = repl_test host = 172.17.0.2 user = postgres password = postgres' PUBLICATION test_pub;`
