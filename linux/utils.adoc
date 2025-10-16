@@ -21,3 +21,7 @@
 == Security
 
 * `srm` - secure delete
+
+== Editors, viewers
+
+* `xxd` - shows a hex dump of the file
