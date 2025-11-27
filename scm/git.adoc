@@ -88,3 +88,8 @@ To edit more/older commits:
 == GitHub
 
 * `git fetch upstream pull/<PR_NUMBER>/head:<LOCAL_BRANCH>` - pulls PR `#<PR_NUMER>` into local `<LOCAL_BRANCH>`
+
+
+== Troubleshooting
+
+* issue with TODO list during rebase (cannot lock rebase) - delete `.git/REBASE_HEAD`
