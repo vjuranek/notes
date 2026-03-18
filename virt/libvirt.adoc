@@ -24,3 +24,7 @@ If not taking effect, recreate network:
 * `domblklist domain_name` - info about VM block devices
 
 * `sudo virsh net-dhcp-leases default` - print IP address of the VMs on the `default` network
+
+== VMs
+
+* XML definition of the VMs is stored in `/etc/libvirt/qemu`
