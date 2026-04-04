@@ -1,0 +1,7 @@
+= Podman
+
+== Testcontainers
+
+* `systemctl --user enable --now podman.socket`
+* `export DOCKER_HOST=unix://${XDG_RUNTIME_DIR}/podman/podman.sock`
+* `export TESTCONTAINERS_RYUK_DISABLED=true`
