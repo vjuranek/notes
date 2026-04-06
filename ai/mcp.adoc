@@ -1,0 +1,3 @@
+= MCP
+
+* `npx -y @modelcontextprotocol/inspector` download and start MCP inspector
