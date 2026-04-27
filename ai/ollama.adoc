@@ -1,0 +1,11 @@
+= ollama
+
+== Config
+
+* edit `/etc/systemd/system/ollama.service`
+* to setup model dir and bind to public port under `[Service]` section:
+```
+Environment="OLLAMA_HOST=0.0.0.0:11434"
+Environment="OLLAMA_MODELS=/mnt/ollama"
+```
+* `systemctl daemon-reload && systemctl restart ollama`
