@@ -1,0 +1,3 @@
+= Bluetooth
+
+* `modprobe btusb` - fixed the issue when Bluetoooth is not visible becuase of `Bluetooth service skipped, unmet condition check ConditionPathIsDirectory=/sys/class/bluetooth`
