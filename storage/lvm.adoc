@@ -30,3 +30,5 @@ resize2fs /dev/fedora_localhost-live/root
 == Misc
 
 * `file -s <device>` - checks, if the device is LVM device (output should be something like `<device>: LVM2 PV (Linux Logical Volume Manager) ...`)
+
+* `lvmdevices --adddev /dev/sda3` - add LVM device which is e.g. not recognied by `pvscan`. The device has to be LVM device, `blkid /dev/sda3` should disaply `TYPE="LVM2_member"`. After that VG can be activated as usual via `vgchange -ay`.
