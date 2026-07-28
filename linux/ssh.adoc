@@ -17,3 +17,14 @@
 * `dnf -y install xorg-x11-server-Xorg xorg-x11-xauth xorg-x11-apps x11-ssh-askpass`
 * `ssh -Y username@machine`
 * `export DISPLAY=:0.0`
+
+== SSH keys
+
+If the key is protected by passphrase, ssh may skip the key even when explicitly provided (`ssh -i`).
+It can be work-around by adding the key using `ssh-add` or by adding this into `~/.ssh/config`:
+
+```
+Host *
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/my_ssh-key
+```
