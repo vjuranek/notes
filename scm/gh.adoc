@@ -1,0 +1,6 @@
+= GH utility
+
+== Setup
+
+* `gh auth login` -  login to a remote GH instance
+* ``gh auth status` - show actibe sessions
