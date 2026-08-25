@@ -20,7 +20,7 @@
 
 == Security
 
-* `srm` - secure delete
+* `shred -u -v -z -n 3 /path/to/file` - secure delete, rewrite 3 time (`-n`), delete afterwards (`-u`), versobe mode (`-v`)
 
 == Editors, viewers
 
