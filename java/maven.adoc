@@ -1,0 +1,16 @@
+= Maven
+
+== Mirrors
+
+In `settings.xml`
+
+```
+  <mirrors>
+    <mirror>
+      <mirrorOf>central</mirrorOf>
+      <id>central-internal</id>
+      <name>central-internal</name>
+      <url>MAVEN_CENTRAL_MIRROR</url>
+    </mirror>
+  </mirrors>
+```
