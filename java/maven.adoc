@@ -18,3 +18,7 @@ In `settings.xml`
     </mirror>
   </mirrors>
 ```
+
+== mvnw
+
+* `export MVNW_REPOURL=$MAVEN_CENTRAL_MIRROR` - force `mvnw` utility to use Maven Central mirror
