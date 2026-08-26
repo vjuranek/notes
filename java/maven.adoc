@@ -1,5 +1,9 @@
 = Maven
 
+== Config
+
+* `export JAVA_TOOL_OPTIONS="-Djavax.net.ssl.trustStore=/etc/pki/ca-trust/extracted/java/cacerts"` - force java/maven to use system CA trust
+
 == Mirrors
 
 In `settings.xml`
