@@ -1,0 +1,6 @@
+= NVMe
+
+== NVMe cli
+
+* `dnf install nvme-cli`
+* `nvme list` - list NVMe devices
