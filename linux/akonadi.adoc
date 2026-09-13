@@ -6,6 +6,14 @@
 
 * `akonadictl fsck` - check and eventually fix internal stoage
 
+== Setup
+
+=== Disable Akonadi to start after login
+
+* `akonadictl stop`
+* `nano ~/.config/akonadi/akonadiserverrc`
+* `StartServer=false`
+
 = Baloo
 
 * `balooctrl disable` - disable Baloo, file search an indexing
