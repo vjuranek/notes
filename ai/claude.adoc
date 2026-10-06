@@ -1,0 +1,21 @@
+= Claude
+
+== Useful commands
+
+* `/effort`
+* `/goal`
+
+== Hooks
+
+* Provides determinism and guardrails
+* A script run in given stage, can block further execution
+* Admin, user, project, folder levels
+
+== General recommendations
+
+* Plan with highest model, for implementation switch to lower capability model - planning is much cheaper and with a good plan implementation is more straightforward
+* Keep `CLAUDE.md` under 200 lines
+
+== Useful links
+
+* https://claude.ai/directory
