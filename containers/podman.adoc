@@ -1,5 +1,9 @@
 = Podman
 
+== Setup
+
+* `systemctl --user enable --now podman.socket` -enable podman socket which is needed by `podman compose`
+
 == Testcontainers
 
 * `systemctl --user enable --now podman.socket`
