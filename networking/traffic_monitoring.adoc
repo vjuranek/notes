@@ -1,0 +1,6 @@
+= Traffic monitoring
+
+* `nethogs -a` - monitor all interfaces
+* `nethogs eth0` - monitor only `eth0` interface
+
+* `ss -tinp state established` - list all established connection (`ss` is usually installed on all machines)
