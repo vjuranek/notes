@@ -1,5 +1,6 @@
 = Device mapper
 
+* `dmsetup info -c -o name,uuid` - list all devices and their UUIDs, encrytped partitions start with `CRYPT`
 * `dmsetup info  /dev/mapper/36001405cd5268d7e3b64b40a16200729` - info about the device, `Open count` is number of processes using the device
 * `dmsetup remove -f /dev/mapper/<name>` - force remove device mapper link
 
