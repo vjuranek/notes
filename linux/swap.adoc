@@ -1,0 +1,3 @@
+= Swap
+
+* `swapon --show` - shows swaps
