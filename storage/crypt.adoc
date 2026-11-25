@@ -1,0 +1,3 @@
+= Crypt setup
+
+* `cryptsetup status cryptswap` - status of the (encrypted) device
