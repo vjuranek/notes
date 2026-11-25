@@ -20,6 +20,7 @@ lvextend /dev/fedora_localhost-live/root /dev/vdb1
 resize2fs /dev/fedora_localhost-live/root
 ----
 
+If the partition is LUKS encrytped, before running `resize2fs` has to be run `cryptsetup resize device_UUID`, e.g. `cryptsetup resize luks-d4daa266-c739-4899-839f-1ffaf296d1bb`
 
 == Metadata
 
